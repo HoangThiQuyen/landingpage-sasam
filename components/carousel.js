@@ -4,7 +4,10 @@ import Image from "next/image";
 
 // image
 import logo from "../public/image/logo.png";
-import WOW from "wowjs";
+
+import Head from "next/head";
+const isServer = typeof window === "undefined";
+const WOW = !isServer ? require("wowjs") : null;
 
 export default function Carousel() {
   const videoRef = useRef();
@@ -19,14 +22,19 @@ export default function Carousel() {
     };
   }, []);
 
-  seEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
+  useEffect(() => {
+    new WOW.WOW().init();
   }, []);
 
   return (
     <div>
+      <Head>
+        <title>My Carousel</title>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+        />
+      </Head>
       <div>
         <div className={styles.bgvideo}>
           <video ref={videoRef} autoPlay loop muted className={styles.video}>
@@ -46,9 +54,14 @@ export default function Carousel() {
       </div>
 
       <div>
-        <h1 className="wow slideInLeft" data-wow-duration={5000}>
-          Dello
+        <h1
+          className="wow slideInLeft"
+          data-wow-duration="0.5s"
+          data-wow-delay="0.5s"
+        >
+          QuyenCa{" "}
         </h1>
+        <h2 className="wow slideInDown">Vu vau vau vau vauv vau</h2>
       </div>
     </div>
   );
