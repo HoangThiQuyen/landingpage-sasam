@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+.infoProduct{
+  font-family: 'Nunito';
+}
+.imageProduct1{
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 60px;
+  border:2px solid #0297D0 !important;
+  padding:3px !important;
+}
+.imageProduct2{
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 60px;
+  border:2px solid #0297D0 !important;
+  padding:3px !important;
+}
+.imageProduct3{
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 60px;
+  border:2px solid #0297D0 !important;
+  padding:3px !important;
+}
+.imageProduct4{
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 60px;
+  border:2px solid #0297D0 !important;
+  padding:3px !important;
+}
+.iconLogo{
+  position:absolute;
+  top:52%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+}
+.title{
+  font-family: 'Ephesis';
+  font-size: 60px;
+  color:#383B6D;
+  font-weight:bolder;
+  margin-bottom: 30px;
+}
+

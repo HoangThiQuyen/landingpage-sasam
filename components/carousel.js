@@ -2,13 +2,20 @@ import { useEffect, useRef } from "react";
 import styles from "../styles/Landing.module.css";
 import Image from "next/image";
 
+// wow
+const isServer = typeof window === "undefined";
+const WOW = !isServer ? require("wowjs") : null;
+
 // image
 import logo from "../public/image/logo.png";
-import WOW from "wowjs";
+import bgLine from "../public/image/bg-line.png";
+import iconHand from "../public/image/icon_flower.png";
+import Head from "next/head";
 
 export default function Carousel() {
   const videoRef = useRef();
 
+  // useEffect
   useEffect(() => {
     let clear = setTimeout(() => {
       videoRef.current.play();
@@ -19,14 +26,19 @@ export default function Carousel() {
     };
   }, []);
 
-  seEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
+  useEffect(() => {
+    new WOW.WOW().init();
   }, []);
 
   return (
     <div>
+      <Head>
+        <title>My Carousel</title>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+        />
+      </Head>
       <div>
         <div className={styles.bgvideo}>
           <video ref={videoRef} autoPlay loop muted className={styles.video}>
@@ -37,18 +49,30 @@ export default function Carousel() {
             />
           </video>
           <div className={styles.overlay}></div>
+          <div className={styles.bgLine}>
+            <Image src={bgLine} alt="Line background" />
+          </div>
+          <div className={styles.bgLine1}>
+            <Image src={bgLine} alt="Line1 background" />
+          </div>
+          <div className={styles.bgLine2}>
+            <Image src={bgLine} alt="Line2 background" />
+          </div>
         </div>
         <div className={styles.background}>
           <div className={`${styles.logo} `}>
-            <Image src={logo} alt="Picture of the author" />
+            <Image src={logo} alt="Logo SasamViet" />
           </div>
+        </div>
+        <div className={styles.content}>
+          <p className="wow fadeInUp" data-wow-duration="3s">
+            Dược liệu vùng cát biển
+          </p>
         </div>
       </div>
 
-      <div>
-        <h1 className="wow slideInLeft" data-wow-duration={5000}>
-          Dello
-        </h1>
+      <div className={styles.iconHand}>
+        <Image src={iconHand} alt="Icon hand" width={170} height={170} />
       </div>
     </div>
   );
