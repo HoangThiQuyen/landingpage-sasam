@@ -1,0 +1,35 @@
+.video{
+ width: 100vw;
+ transform: skewY(17deg);
+}
+.bgvideo{
+  position: relative;
+  transform: skewY(-17deg);
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: skewY(17deg);
+  width: 102vw;
+}
+.background{
+  background-color: #F6FCF5;
+  position: absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  top: 0;
+  width: 98.9vw;
+  z-index: -1;
+  transform: skewY(20deg);
+}
+.logo{
+  transform: skewY(-20deg);
+  margin-left: 20px;
+  margin-top: 10px;
+}
