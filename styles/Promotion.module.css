@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+.promotion {
+  margin-top: 30px;
+  position: relative;
+}
+.content {
+  color: #4c4c4c;
+  font-family: "Raleway", sans-serif;
+  background: url("../public/image//bg-promotion.png") no-repeat;
+  /* background-size: cover; */
+  /* background-position: center center; */
+  background-size: contain;
+  min-height: 600px;
+}
+.content h1 {
+  font-size: 100px;
+  font-weight: bolder;
+}
+.title {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 60px;
+  color: #383b6d;
+  font-family: "Nunito", sans-serif;
+  /* font-style: italic; */
+  background-color: red;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.promotionText {
+  font-family: "Ephesis";
+  position: absolute;
+  top: 47%;
+  left: 20%;
+  transform: translate(-47%, -20%);
+}

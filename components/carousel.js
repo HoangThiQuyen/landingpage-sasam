@@ -52,17 +52,6 @@ export default function Carousel() {
           </div>
         </div>
       </div>
-
-      <div>
-        <h1
-          className="wow slideInLeft"
-          data-wow-duration="0.5s"
-          data-wow-delay="0.5s"
-        >
-          QuyenCa{" "}
-        </h1>
-        <h2 className="wow slideInDown">Vu vau vau vau vauv vau</h2>
-      </div>
     </div>
   );
 }
