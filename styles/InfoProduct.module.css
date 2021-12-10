@@ -1,48 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
-.infoProduct{
-  font-family: 'Nunito';
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+.infoProduct {
+  font-family: "Nunito";
 }
-.imageProduct1{
+.imageProduct1 {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 60px;
-  border:2px solid #0297D0 !important;
-  padding:3px !important;
+  border: 2px solid #0297d0 !important;
+  padding: 3px !important;
 }
-.imageProduct2{
+.imageProduct2 {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 60px;
-  border:2px solid #0297D0 !important;
-  padding:3px !important;
+  border: 2px solid #0297d0 !important;
+  padding: 3px !important;
 }
-.imageProduct3{
+.imageProduct3 {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   border-top-right-radius: 60px;
-  border:2px solid #0297D0 !important;
-  padding:3px !important;
+  border: 2px solid #0297d0 !important;
+  padding: 3px !important;
 }
-.imageProduct4{
+.imageProduct4 {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-left-radius: 60px;
-  border:2px solid #0297D0 !important;
-  padding:3px !important;
+  border: 2px solid #0297d0 !important;
+  padding: 3px !important;
 }
-.iconLogo{
-  position:absolute;
-  top:52%;
-  left:50%;
-  transform:translate(-50%, -50%);
-
+.iconLogo {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.title{
-  font-family: 'Ephesis';
+.title {
+  font-family: "Ephesis";
   font-size: 60px;
-  color:#383B6D;
-  font-weight:bolder;
+  color: #383b6d;
+  font-weight: bolder;
   margin-bottom: 30px;
 }
-
+.btn {
+  background-image: linear-gradient(to right, #11af2b, #85b740);
+  color: #fff;
+  padding: 10px 30px;
+  outline: none;
+  transition: all 2s;
+}
+.btn:hover {
+  color: #fff;
+  background-image: linear-gradient(to left, #11af2b, #6ba31c);
+}

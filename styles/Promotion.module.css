@@ -19,15 +19,17 @@
 }
 .title {
   text-align: center;
-  font-size: 60px;
-  margin-bottom: 60px;
-  color: #383b6d;
+  font-size: 50px;
+  /* margin-bottom: 60px; */
+  color: black;
+  font-weight: bold;
   font-family: "Nunito", sans-serif;
   /* font-style: italic; */
-  background-color: red;
+  /* background-color: red; */
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 150px;
+  /* margin-bottom: 70px; */
 }
 .promotionText {
   font-family: "Ephesis";
@@ -35,4 +37,8 @@
   top: 47%;
   left: 20%;
   transform: translate(-47%, -20%);
+}
+.imgTitle {
+  text-align: center;
+  margin-bottom: 70px;
 }
