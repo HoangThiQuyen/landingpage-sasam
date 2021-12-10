@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+
 .video{
  width: 100vw;
- transform: skewY(17deg);
+ transform: skewY(18deg);
 }
 .bgvideo{
   position: relative;
-  transform: skewY(-17deg);
+  transform: skewY(-18deg);
   overflow: hidden;
 }
 .overlay{
@@ -13,8 +16,8 @@
   bottom:0;
   left:0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: skewY(17deg);
+  background-color: rgba(0, 0, 0, 0.55);
+  transform: skewY(18deg);
   width: 102vw;
 }
 .background{
@@ -30,6 +33,66 @@
 }
 .logo{
   transform: skewY(-20deg);
-  margin-left: 20px;
+  margin-left: 23px;
   margin-top: 10px;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Ephesis';
+  font-size:100px;
+}
+.bgLine{
+  position: absolute;
+  bottom: 0.2%;
+  overflow:hidden;
+  transform: skewY(18deg);
+}
+.bgLine1{
+  position: absolute;
+  top: -1%;
+  overflow:hidden;
+  transform: rotate(180deg);
+}
+.bgLine2{
+  position: absolute;
+  bottom: -0.6%;
+  left:51%;
+    overflow:hidden;  
+}
+.iconHand{
+ position: absolute;
+ right: 8%;
+ bottom:-37%;
+ animation-name: icon;
+ animation-duration: 15s;
+ animation-iteration-count:infinite;
+
+}
+
+@keyframes icon{
+  0% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+   
+    transform: translateY(0);
+  }
+  75%{
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  /* 100%{
+    transform: translateX(-30px);
+    transform: translateY(0px);
+  } */
 }
