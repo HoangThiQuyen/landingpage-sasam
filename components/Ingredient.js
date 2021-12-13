@@ -33,13 +33,22 @@ export default function Ingredient() {
         <div className={`row  ${styles.content}`}>
           <div className="col-4">
             <div
-              className={` h-50 d-flex justify-content-end align-items-center`}
+              className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
             >
               <h4>
                 Cát cánh <span>( Platycodon grandiflorum )</span>
               </h4>
             </div>
-            <div className=" h-50 d-flex justify-content-end align-items-center">
+            <div
+              className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
+            >
+              <h4>
+                Bán hạ <span>( Typhonium divaricatum Decne )</span>
+              </h4>
+            </div>
+            <div
+              className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
+            >
               <h4>
                 Tỳ bà diệp <span>( Eriobotrys japonica )</span>
               </h4>
@@ -50,15 +59,24 @@ export default function Ingredient() {
           </div>
           <div className="col-4">
             <div
-              className={` h-50 d-flex justify-content-start align-items-center`}
+              className={` ${styles.ingredientItem} d-flex justify-content-start align-items-center`}
             >
               <h4>
                 Sa Sâm Việt <span>( Sarmentosa )</span>
               </h4>
             </div>
-            <div className=" h-50 d-flex justify-content-start align-items-center">
+            <div
+              className={` ${styles.ingredientItem} d-flex justify-content-start align-items-center`}
+            >
               <h4>
                 Bạc hà diệp <span>( Menthg Arvensis Lin )</span>
+              </h4>
+            </div>
+            <div
+              className={`${styles.ingredientItem} d-flex justify-content-start align-items-center`}
+            >
+              <h4>
+                Tang bạch bi <span>( Cortex mori Albae Radicis )</span>
               </h4>
             </div>
           </div>
