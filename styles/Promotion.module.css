@@ -7,16 +7,17 @@
 .content {
   color: #4c4c4c;
   font-family: "Raleway", sans-serif;
-  background: url("../public/image//bg-promotion.png") no-repeat;
+  background: url("../public/image/bg-promotion.png") no-repeat;
   /* background-size: cover; */
   /* background-position: center center; */
   background-size: contain;
-  min-height: 600px;
+  min-height: 500px;
 }
 .content h1 {
   font-size: 100px;
   font-weight: bolder;
 }
+
 .title {
   text-align: center;
   font-size: 50px;
@@ -29,16 +30,22 @@
   width: 50%;
   margin: 0 auto;
   margin-top: 150px;
-  /* margin-bottom: 70px; */
+  margin-bottom: 70px;
+}
+.title::after {
+  display: block;
+  height: 5px;
+  background-color: #1eac52;
+  content: "";
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .promotionText {
   font-family: "Ephesis";
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 20%;
-  transform: translate(-47%, -20%);
-}
-.imgTitle {
-  text-align: center;
-  margin-bottom: 70px;
+  transform: translate(-50%, -20%);
 }

@@ -66,7 +66,7 @@
 .iconHand{
  position: absolute;
  right: 8%;
- bottom:-37%;
+ bottom:-32%;
  animation-name: icon;
  animation-duration: 15s;
  animation-iteration-count:infinite;

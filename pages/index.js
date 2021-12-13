@@ -1,9 +1,7 @@
-import Head from "next/head";
-import { useEffect } from "react";
-
 import Carousel from "../components/carousel";
 import Promotion from "../components/promotion";
 import IntroProduct from "../components/intro-product";
+import Uses from "../components/uses";
 
 export default function Home() {
   return (
@@ -13,6 +11,7 @@ export default function Home() {
       <IntroProduct />
 
       <Promotion />
+      {/* <Uses /> */}
     </div>
   );
 }
