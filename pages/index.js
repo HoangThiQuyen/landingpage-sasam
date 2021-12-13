@@ -3,6 +3,7 @@ import Promotion from "../components/promotion";
 import IntroProduct from "../components/intro-product";
 import Uses from "../components/uses";
 import Ingredient from "../components/Ingredient";
+import Effect from "../components/effect";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Ingredient />
 
       <Promotion />
-      {/* <Uses /> */}
+      <Uses />
+      <Effect />
     </div>
   );
 }

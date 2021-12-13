@@ -14,3 +14,29 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.carousel-wrapper .rec-pagination button {
+  background: #c8c8c8;
+  /* box-shadow: 0 0 1px 3px #235f9e; */
+}
+.carousel-wrapper .rec-carousel-wrapper button:hover {
+  background-color: #235f9e;
+}
+
+.effect .rec-pagination button {
+  box-shadow: none;
+  border: 2px solid white;
+}
+.effect .rec-pagination button.rec-dot_active {
+  box-shadow: none;
+  border: 2px solid #235f9e;
+  background-color: #235f9e;
+}
+
+.effect .rec-carousel-wrapper button:hover {
+  background-color: #235f9e;
+  color: white;
+}
+.effect .rec-carousel-wrapper button {
+  background-color: #eee;
+}
