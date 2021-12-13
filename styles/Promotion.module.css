@@ -49,3 +49,12 @@
   left: 20%;
   transform: translate(-50%, -20%);
 }
+.promotionContent {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Ephesis";
+  position: absolute;
+  top: 80%;
+  right: -3%;
+  transform: translate(-50%, -3%);
+}

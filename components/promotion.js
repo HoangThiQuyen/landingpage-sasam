@@ -12,6 +12,9 @@ export default function Promotion() {
         <div className={styles.promotionText}>
           <h1 className="display-4">Khuyến mãi 20%</h1>
         </div>
+        <p className={styles.promotionContent}>
+          Khuyến mãi đặc biệt nhằm tri ân khách hàng
+        </p>
       </div>
     </div>
   );

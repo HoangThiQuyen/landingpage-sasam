@@ -72,4 +72,8 @@
   100% {
      transform: translateX(-15px);
   }
-} 
+}
+
+.ingredientItem{
+  height: 33.33% !important;
+}
