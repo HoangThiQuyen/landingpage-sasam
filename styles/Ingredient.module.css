@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.ingredient{
+  margin-top: 150px;
+  font-family: "Nunito", sans-serif;
+  background-color: #f4faf4;
+  position: relative;
+  
+}
+.ingredientLineBottom{
+  transform: rotate(180deg);
+}
+
+.title{
+  text-align: center;
+  font-size: 50px;
+ 
+  color: black;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.title::after {
+  display: block;
+  height: 5px;
+  background-color: #1eac52;
+  content: "";
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.content span{
+  font-family: "Ephesis";
+  font-size: 30px;
+  color: #383b6d;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.leafIcon{
+  position:absolute;
+  top: -7%;
+  left: 3%;
+}
+.leafIcon1{
+  position:absolute;
+  bottom: -7%;
+  right: 3%;
+  z-index: 3;
+  animation: bounceInLeft 5s linear infinite;
+}
+@keyframes bounceInLeft {
+  0% {
+    
+     transform: translateX(-15px);
+  }
+  25% {
+     
+     transform: translateX(15px);
+  }
+  50% {
+     transform: translateX(-15px);
+  }
+  75% {
+    transform: translateX(15px);
+ }
+  100% {
+     transform: translateX(-15px);
+  }
+} 
