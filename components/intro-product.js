@@ -47,7 +47,7 @@ export default function IntroProduct() {
             có đờm, ho lâu ngày.
           </p>
           <div className="text-center">
-            <button type="button" className="btn btn-success">
+            <button type="button" className={`btn ${styles.btn}`}>
               Xem thêm
             </button>
           </div>
