@@ -5,7 +5,7 @@ import usesImg2 from "../public/image/uses2.png";
 import usesImg3 from "../public/image/uses3.png";
 import usesImg4 from "../public/image/uses4.png";
 
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
 
 // *** Component
 import UsesItem from "./usesItem";
@@ -41,11 +41,11 @@ export default function Uses() {
   ];
   return (
     <div className="carousel-wrapper">
-      <Carousel breakPoints={breakPoints}>
+      {/* <Carousel breakPoints={breakPoints}>
         {data.map((ele) => (
           <UsesItem key={ele.id} item={ele} />
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }
