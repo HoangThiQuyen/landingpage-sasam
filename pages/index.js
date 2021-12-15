@@ -11,6 +11,7 @@ import Stories from "../components/stories";
 import News from "../components/news";
 import Achievement from "../components/achievement";
 import ScientificResearch from "../components/ScientificResearch";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -53,6 +54,9 @@ export default function Home() {
 
       {/* Nghiên cứu khoa học  */}
       <ScientificResearch />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

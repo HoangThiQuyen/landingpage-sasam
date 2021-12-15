@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../styles/Achievement.module.css";
 import { Chrono } from "react-chrono";
+import Image from "next/image";
+import img1 from "../public/image/nat-1.jpg";
+import img2 from "../public/image/nat-2.jpg";
+import img3 from "../public/image/nat-3.jpg";
 
 export default function Achievement() {
   const items = [
@@ -80,8 +84,41 @@ export default function Achievement() {
     <div>
       <h2 className={styles.title}>Thành tựu nổi bật</h2>
       <div className="row">
-        <div className="col-md-3">hihi</div>
-        <div className="col-md-9">
+        <div className="col-sm-4">
+          <div className="composition">
+            <Image
+              // srcSet="img/nat-1.jpg 250w, img/nat-1-large.jpg 1000w"
+              // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 250px"
+              alt="Photo 1"
+              // className="composition__photo "
+              className="composition__photo--p1"
+              src={img1}
+              width={250}
+              height={250}
+            />
+
+            <Image
+              // srcSet="img/nat-2.jpg 250w, img/nat-2-large.jpg 1000w"
+              // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 200px"
+              alt="Photo 2"
+              className="composition__photo--p2"
+              src={img2}
+              width={250}
+              height={250}
+            />
+
+            <Image
+              // srcSet="img/nat-3.jpg 250w, img/nat-3-large.jpg 1000w"
+              // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 250px"
+              alt="Photo 3"
+              className="composition__photo--p3"
+              src={img3}
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
+        <div className="col-sm-8">
           <div style={{ height: "800px", width: "100%" }}>
             <Chrono
               items={items}
