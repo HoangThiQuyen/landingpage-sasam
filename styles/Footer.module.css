@@ -1,0 +1,80 @@
+.footer {
+  margin-top: 300px;
+}
+.bgFooter {
+  background: url("../public/image/footer.png") center center no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+}
+.iconAnimation {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  animation: leftToRight 10s linear infinite;
+}
+.iconAnimation2 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  animation: rotateIn 10s linear infinite;
+}
+.iconAnimation3 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.footerTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+.footerTitle2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.footerAbso {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footerContent {
+  margin-left: 15px;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+.list a {
+  text-decoration: none;
+  color: #212529;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(20px);
+  }
+  25% {
+    transform: translateX(-0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
