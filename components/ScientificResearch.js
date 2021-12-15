@@ -27,18 +27,76 @@ export default function ScientificResearch() {
             thuộc nhóm hàng đầu thế giới trong cây Sa Sâm Việt
           </p>
         </div>
-        <div className={`row ${styles.imageContent}`}>
-          <div className="col-6">
-            <Image src={scientificResearch1} alt="scientificResearch1" />
+        <div className={`row ${styles.imageContent} justify-content-between`}>
+          <div className={`col-6 text-end`}>
+            <div className={` ${styles.scientificResearchImage}`}>
+              <div className={styles.overlayHover}></div>
+              <Image
+                src={scientificResearch1}
+                alt="scientificResearch1"
+                className="w-100 "
+              />
+
+              <div className={styles.hoverText}>
+                <p>Flavonoid</p>
+                <button type="button" className={`btn ${styles.btn}`}>
+                  Xem thêm
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="col-6">
-            <Image src={scientificResearch2} alt="scientificResearch2" />
+          <div className={`col-6 `}>
+            <div className={` ${styles.scientificResearchImage}`}>
+              <div className={styles.overlayHover}></div>
+              <Image
+                src={scientificResearch2}
+                alt="scientificResearch2"
+                className="w-100 "
+              />
+
+              <div className={styles.hoverText}>
+                <p>Saponin</p>
+                <button type="button" className={`btn ${styles.btn}`}>
+                  Xem thêm
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="col-6">
-            <Image src={scientificResearch3} alt="scientificResearch3" />
+
+          <div className={`col-6 text-end`}>
+            <div className={` ${styles.scientificResearchImage}`}>
+              <div className={styles.overlayHover}></div>
+              <Image
+                src={scientificResearch3}
+                alt="scientificResearch3"
+                className="w-100 "
+              />
+
+              <div className={styles.hoverText}>
+                <p>Polyphenol</p>
+                <button type="button" className={`btn ${styles.btn}`}>
+                  Xem thêm
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="col-6">
-            <Image src={scientificResearch4} alt="scientificResearch4" />
+
+          <div className={`col-6 `}>
+            <div className={` ${styles.scientificResearchImage}`}>
+              <div className={styles.overlayHover}></div>
+              <Image
+                src={scientificResearch4}
+                alt="scientificResearch4"
+                className="w-100 "
+              />
+
+              <div className={styles.hoverText}>
+                <p>Muối vô cơ</p>
+                <button type="button" className={`btn ${styles.btn}`}>
+                  Xem thêm
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
