@@ -7,6 +7,9 @@ import Effect from "../components/effect";
 import UserManual from "../components/UserManual";
 import UserObject from "../components/UserObject";
 import Rating from "../components/Rating";
+import Stories from "../components/stories";
+import News from "../components/news";
+import Achievement from "../components/achievement";
 
 export default function Home() {
   return (
@@ -36,6 +39,14 @@ export default function Home() {
 
       {/* Người dùng đánh giá */}
       <Rating />
+      {/* Câu chuyện khát vọng */}
+      <Stories />
+
+      {/* Tin tức nổi bật */}
+      <News />
+
+      {/* Thành tựu nổi bật */}
+      <Achievement />
     </div>
   );
 }

@@ -15,18 +15,10 @@
   background-color: #1eac52;
   content: "";
   text-align: center;
-  width: 17%;
+  width: 22%;
   margin: 0 auto;
   margin-top: 10px;
 }
-.content {
-  margin-top: 20px;
-  font-size: 17px;
-  text-align: center;
-  font-weight: 600;
-}
-.img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.card-media-wrapper {
+  display: none;
 }

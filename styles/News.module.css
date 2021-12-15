@@ -1,3 +1,19 @@
+/* .news {
+  position: relative;
+}
+.overlayNews {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  background-color: #3a1c1c;
+  padding: 10px;
+  opacity: 0.9;
+  height: 100px;
+}
+.contentNews {
+  color: white;
+} */
 .title {
   text-align: center;
   font-size: 50px;
@@ -15,18 +31,7 @@
   background-color: #1eac52;
   content: "";
   text-align: center;
-  width: 17%;
+  width: 22%;
   margin: 0 auto;
   margin-top: 10px;
-}
-.content {
-  margin-top: 20px;
-  font-size: 17px;
-  text-align: center;
-  font-weight: 600;
-}
-.img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
 }
