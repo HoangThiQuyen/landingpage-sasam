@@ -6,6 +6,9 @@ import Ingredient from "../components/Ingredient";
 import Effect from "../components/effect";
 import UserManual from "../components/UserManual";
 import UserObject from "../components/UserObject";
+import Stories from "../components/stories";
+import News from "../components/news";
+import Achievement from "../components/achievement";
 
 export default function Home() {
   return (
@@ -32,6 +35,15 @@ export default function Home() {
 
       {/* Đối tượng sử dụng */}
       <UserObject />
+
+      {/* Câu chuyện khát vọng */}
+      <Stories />
+
+      {/* Tin tức nổi bật */}
+      <News />
+
+      {/* Thành tựu nổi bật */}
+      <Achievement />
     </div>
   );
 }

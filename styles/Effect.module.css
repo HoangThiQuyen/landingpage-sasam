@@ -1,5 +1,5 @@
 .bg {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   background: url("../public/image/bg-effect.jpg") center center no-repeat;
   min-height: 800px;
   position: relative;
@@ -19,7 +19,7 @@
   height: 200px;
   /* background: red; */
   position: absolute;
-  top: 42%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: aqua;
@@ -54,4 +54,26 @@
   position: absolute;
   bottom: -2%;
   left: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.title::after {
+  display: block;
+  height: 5px;
+  background-color: #1eac52;
+  content: "";
+  text-align: center;
+  width: 22%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
