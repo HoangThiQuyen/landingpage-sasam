@@ -1,18 +1,27 @@
 .scientificResearch{
   background: url('../public/image/scientific_research_banner.png') center center no-repeat;
-  height:650px;
+  height:700px;
+
   position: relative;
   font-family: "Nunito", sans-serif;
   background-size: cover;
   margin-top: 150px;
-
-  
 }
 .overlay{
   position:absolute;
   top: 0%;left: 0%;right: 0%;bottom: 0%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.65);
   z-index: 0;
+}
+@media screen and (max-width: 992px) {
+  .scientificResearch{
+ height: 450px;
+  }
+  .content{
+    top:50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .title {
@@ -37,9 +46,10 @@
 }
 .content{
   position: absolute;
-  top:32%;
+  top:25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
 }
 .text{
   color: white;
@@ -50,7 +60,7 @@
 }
 .imageContent{
   position: absolute;
-  bottom: 7%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, 50%);
 }

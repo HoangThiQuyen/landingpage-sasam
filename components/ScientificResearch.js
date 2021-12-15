@@ -19,8 +19,8 @@ export default function ScientificResearch() {
         <div>
           <Image src={scientificResearchLine} alt="scientificResearchLine" />
         </div>
-        <div className="container">
-          <div className={`${styles.content} `}>
+        <div>
+          <div className={`${styles.content} container`}>
             <h1 className={styles.title}>Nghiên cứu khoa học</h1>
             <p className={styles.text}>
               Sâm trông trên cát biển duy nhất tại Việt Nam. Đề tài nghiên cứu
@@ -28,8 +28,10 @@ export default function ScientificResearch() {
               thuộc nhóm hàng đầu thế giới trong cây Sa Sâm Việt
             </p>
           </div>
-          <div className={`row ${styles.imageContent} justify-content-between`}>
-            <div className={`col-6 text-end`}>
+          <div
+            className={`row ${styles.imageContent} justify-content-between d-none d-lg-flex`}
+          >
+            <div className={`col-12 col-lg-6 text-end`}>
               <div className={` ${styles.scientificResearchImage}`}>
                 <div className={styles.overlayHover}></div>
                 <Image
@@ -46,7 +48,7 @@ export default function ScientificResearch() {
                 </div>
               </div>
             </div>
-            <div className={`col-6 `}>
+            <div className={`col-12 col-lg-6`}>
               <div className={` ${styles.scientificResearchImage}`}>
                 <div className={styles.overlayHover}></div>
                 <Image
@@ -64,7 +66,7 @@ export default function ScientificResearch() {
               </div>
             </div>
 
-            <div className={`col-6 text-end`}>
+            <div className={`col-12 col-lg-6 text-end`}>
               <div className={` ${styles.scientificResearchImage}`}>
                 <div className={styles.overlayHover}></div>
                 <Image
@@ -82,7 +84,7 @@ export default function ScientificResearch() {
               </div>
             </div>
 
-            <div className={`col-6 `}>
+            <div className={`col-12 col-lg-6`}>
               <div className={` ${styles.scientificResearchImage}`}>
                 <div className={styles.overlayHover}></div>
                 <Image
