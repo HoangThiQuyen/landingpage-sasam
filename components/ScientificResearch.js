@@ -29,11 +29,7 @@ export default function ScientificResearch() {
         </div>
         <div className={`row ${styles.imageContent}`}>
           <div className="col-6">
-            <Image
-              src={scientificResearch1}
-              alt="scientificResearch1"
-              width="200"
-            />
+            <Image src={scientificResearch1} alt="scientificResearch1" />
           </div>
           <div className="col-6">
             <Image src={scientificResearch2} alt="scientificResearch2" />
