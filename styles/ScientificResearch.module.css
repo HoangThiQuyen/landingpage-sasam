@@ -1,16 +1,17 @@
 .scientificResearch{
   background: url('../public/image/scientific_research_banner.png') center center no-repeat;
-  height:600px;
+  height:650px;
   position: relative;
   font-family: "Nunito", sans-serif;
   background-size: cover;
   margin-top: 150px;
+
   
 }
 .overlay{
   position:absolute;
   top: 0%;left: 0%;right: 0%;bottom: 0%;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 0;
 }
 
@@ -49,7 +50,72 @@
 }
 .imageContent{
   position: absolute;
-  bottom: 0%;
+  bottom: 7%;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+.scientificResearchImage{
+  position: relative;
+  overflow: hidden;
+ padding-bottom: 0px;
+ padding-bottom:15px;
+}
+.scientificResearchImage span{
+  width: 100% !important;
+}
+.scientificResearchImage img{
+ transition: all .5s;
+ border-radius: 16px;
+
+ }
+.scientificResearchImage:hover img{
+ transform: scale(1.2,1.2);
+
+}
+.scientificResearchImage:hover .overlayHover{
+  transform: skew(30deg) translateX(-18%);
+ 
+}
+.scientificResearchImage:hover .hoverText{
+  opacity: 1;
+  
+}
+.overlayHover{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 140%;
+  height: 91.7%;
+  background-color: #235f9ec5;
+  margin: 0 12px 27px 12px;
+  transition: all .5s;
+  transform: skew(30deg) translateX(-117%);
+ z-index: 1;
+}
+.hoverText{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: all .7s;
+  z-index: 1;
+}
+.hoverText p{
+ font-size: 60px;
+ font-family: "Ephesis";
+ text-transform: lowercase;
+}
+.btn {
+  background-image: linear-gradient(to right, #11af2b, #85b740);
+  color: #fff;
+  padding: 10px 30px;
+  outline: none;
+  transition: all 2s;
+}
+.btn:hover {
+  color: #fff;
+  background-image: linear-gradient(to left, #11af2b, #6ba31c);
 }
