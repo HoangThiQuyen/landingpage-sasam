@@ -6,15 +6,18 @@ import Ingredient from "../components/Ingredient";
 import Effect from "../components/effect";
 import UserManual from "../components/UserManual";
 import UserObject from "../components/UserObject";
+import Rating from "../components/Rating";
 import Stories from "../components/stories";
 import News from "../components/news";
 import Achievement from "../components/achievement";
+import ScientificResearch from "../components/ScientificResearch";
 
 export default function Home() {
   return (
     <div>
       {/* Banner */}
       <Carousel />
+
       {/* Giới thiệu sản phẩm */}
       <IntroProduct />
 
@@ -36,6 +39,9 @@ export default function Home() {
       {/* Đối tượng sử dụng */}
       <UserObject />
 
+      {/* Người dùng đánh giá */}
+      <Rating />
+
       {/* Câu chuyện khát vọng */}
       <Stories />
 
@@ -44,6 +50,9 @@ export default function Home() {
 
       {/* Thành tựu nổi bật */}
       <Achievement />
+
+      {/* Nghiên cứu khoa học  */}
+      <ScientificResearch />
     </div>
   );
 }

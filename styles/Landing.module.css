@@ -21,7 +21,7 @@
   width: 102vw;
 }
 .background{
-  background-color: #F6FCF5;
+  background:linear-gradient(to right,#e4d8a4,#e4d8a4,#C3AC98,#0297D0,#2B4B8E);
   position: absolute;
   right:0;
   bottom:0;

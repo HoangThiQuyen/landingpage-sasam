@@ -15,6 +15,7 @@
     "react-dom": "17.0.2",
     "react-elastic-carousel": "^0.11.5",
     "react-player": "^2.9.0",
+    "styled-components": "^5.3.3",
     "swiper": "^7.3.2",
     "wowjs": "^1.1.3"
   },

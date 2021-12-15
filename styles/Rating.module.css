@@ -1,0 +1,101 @@
+.swiperRating{
+  height:300px;
+  position: relative;
+  border-radius: 40px 0 40px 40px;
+  box-shadow: 0 0 30px hsla(22, 100%, 36%, 0.1);
+  background-image: linear-gradient(to right bottom,#24ade4,#0f9bd3,#383b6d);
+  padding: 50px;
+  margin:20px;
+  color:#fff;
+  font-family: "Nunito", sans-serif;
+}
+.ratingItem{
+  
+}
+.avatar{
+  padding:10px;
+  background-color: #fff;
+  width: 70px;height: 70px;
+  border-radius: 50%;
+}
+.nameUser{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding-top: 150px;
+
+}
+.title::after {
+  display: block;
+  height: 5px;
+  background-color: #1eac52;
+  content: "";
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.star{
+  margin-left: 20px;
+}
+.quotation{
+  position:absolute;
+  bottom: 16%;
+  right: -1%;
+}
+.ratingSession{
+position: relative;
+}
+
+.circleIcon{
+  position: absolute;
+  top: 0; right: 12%;
+  animation: rotateIn 10s linear infinite;
+}
+.iconAnimation{
+  position: absolute;
+  top: 10%; left: 12%;
+  animation: leftToRight 10s linear infinite;
+}
+@keyframes rotateIn {
+  0% {
+    
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    
+    transform: translateX(20px);
+  }
+  25% {
+    
+    transform: translateX(-20px);
+  }
+  50% {
+    
+    transform: translateX(20px);
+  }
+  75% {
+    
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+

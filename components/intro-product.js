@@ -59,8 +59,8 @@ export default function IntroProduct() {
                 src={product1}
                 alt="product1"
                 className={`${styles.imageProduct1} wow fadeInLeft`}
-                data-wow-duration="1.5s"
-                data-wow-delay="500ms"
+                data-wow-duration="1.2s"
+                data-wow-delay="200ms"
               />
             </div>
             <div className="col-6 pt-4">
@@ -68,8 +68,8 @@ export default function IntroProduct() {
                 src={product2}
                 alt="product2"
                 className={`${styles.imageProduct2} wow fadeInRight`}
-                data-wow-duration="1.5s"
-                data-wow-delay="1s"
+                data-wow-duration="1.2s"
+                data-wow-delay="400ms"
               />
             </div>
             <div className="col-6 pt-3">
@@ -77,8 +77,8 @@ export default function IntroProduct() {
                 src={product3}
                 alt="product3"
                 className={`${styles.imageProduct3} wow fadeInLeft`}
-                data-wow-duration="1.5s"
-                data-wow-delay="1.5s"
+                data-wow-duration="1.2s"
+                data-wow-delay="600ms"
               />
             </div>
             <div className="col-6 ">
@@ -86,8 +86,8 @@ export default function IntroProduct() {
                 src={product4}
                 alt="product4"
                 className={`${styles.imageProduct4} wow fadeInRight`}
-                data-wow-duration="1.5s"
-                data-wow-delay="2s"
+                data-wow-duration="1.2s"
+                data-wow-delay="800ms"
               />
             </div>
           </div>
