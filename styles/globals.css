@@ -43,3 +43,47 @@ a {
 .timeline-item-title {
   margin-bottom: 30px;
 }
+.card-media-wrapper {
+  display: none;
+}
+.MediaDetailsWrapper {
+  display: none;
+}
+
+.css-14uf6p-TimelineItemContentWrapper {
+  min-height: 150px !important;
+}
+.css-ouzaa4-TimelineContentDetailsWrapper.show-less {
+  max-height: 100% !important;
+}
+.css-oq6549-TimelineSubContent {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 20px !important;
+}
+.css-oq6549-TimelineSubContent::before {
+  content: "*";
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.css-q6vr8b-TimelineContentDetails {
+  margin-top: 30px !important;
+}
+.css-1f02b8t-TitleWrapper.active {
+  background: #ffdf00;
+  color: #0f52ba;
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  border-radius: 7px;
+}
+.timeline-item-title {
+  font-size: 30px !important;
+}
+.timeline-card-content {
+  border: 2px solid #0f52ba;
+}
+.show-more {
+  display: none !important;
+}
