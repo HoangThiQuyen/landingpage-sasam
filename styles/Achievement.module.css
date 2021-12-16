@@ -23,21 +23,8 @@
   display: none;
 }
 
-.composition {
-  position: relative;
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 30px !important;
+  }
 }
-.composition__photo--p1 {
-  position: absolute;
-  top: 0 !important;
-  left: 0 !important;
-}
-.composition__photo--p2 {
-  position: absolute;
-  top: 0 !important;
-  right: 0 !important;
-}
-/* .composition__photo--p3 {
-  position: absolute;
-  top: 0 !important;
-  left: 20px !important;
-} */

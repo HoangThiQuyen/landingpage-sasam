@@ -86,7 +86,7 @@ export default function Achievement() {
   return (
     <div>
       <h2 className={styles.title}>Thành tựu nổi bật</h2>
-      <div className="container">
+      <div className="container-md">
         <div>
           <Chrono
             items={items}

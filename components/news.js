@@ -54,7 +54,7 @@ export default function News() {
             <Swiper {...params} className="mySwiper">
               {data.map((ele) => (
                 <SwiperSlide key={ele.id} className={styles.newItem}>
-                  <div className="card" style={{ width: "18rem" }}>
+                  <div className="card ">
                     <Image
                       src={newImg}
                       className="card-img-top"
@@ -64,9 +64,9 @@ export default function News() {
                     <div className="card-body">
                       <h5 className="card-title">{ele.title}</h5>
                       <p className="card-text">{ele.content}</p>
-                      <a href="#" className="btn btn-primary">
+                      <button type="button" className={`btn ${styles.btn}`}>
                         Xem thêm
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </SwiperSlide>

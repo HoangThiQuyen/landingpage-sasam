@@ -53,9 +53,7 @@ a {
 /* .css-d0st9p-CardImage {
   max-height: 120% !important;
 } */
-.css-mpnodf-TimelineTitleWrapper {
-  width: 7% !important;
-}
+
 .css-d0st9p-CardImage {
   margin: 10px 0;
   object-fit: cover !important;
@@ -103,4 +101,21 @@ a {
 }
 .show-more {
   display: none !important;
+}
+
+.css-mpnodf-TimelineTitleWrapper {
+  width: 7% !important;
+}
+@media screen and (max-width: 992px) {
+  .timeline-item-title {
+    font-size: 15px !important;
+  }
+  .css-mpnodf-TimelineTitleWrapper {
+    width: 10% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .css-mpnodf-TimelineTitleWrapper {
+    width: 15% !important;
+  }
 }

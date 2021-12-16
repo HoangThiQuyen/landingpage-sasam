@@ -27,6 +27,9 @@
 .text {
   text-align: center;
   font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 0;
 }
 .storiesTop {
   background-color: #f4faf4;
