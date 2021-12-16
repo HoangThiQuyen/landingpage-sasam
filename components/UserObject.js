@@ -38,12 +38,12 @@ export default function UserObject() {
 
       <div className="container">
         <h1 className={styles.title}>Đối tượng sử dụng</h1>
-        <div className="d-flex justify-content-center align-items-center">
+        <div className=" d-block d-lg-flex justify-content-center align-items-center text-center text-lg-start ">
           <Image
             src={iconUserObject}
             alt="userObjectLine"
-            width={100}
-            height={100}
+            width={80}
+            height={80}
           />
           <div className={styles.content}>
             <h4 className="mb-2">Đối tượng sử dụng Xịt Sa Sâm Việt</h4>

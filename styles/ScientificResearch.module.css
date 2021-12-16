@@ -1,7 +1,6 @@
 .scientificResearch{
   background: url('../public/image/scientific_research_banner.png') center center no-repeat;
   height:700px;
-
   position: relative;
   font-family: "Nunito", sans-serif;
   background-size: cover;
@@ -13,16 +12,7 @@
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 0;
 }
-@media screen and (max-width: 992px) {
-  .scientificResearch{
- height: 450px;
-  }
-  .content{
-    top:50% !important;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
+
 
 .title {
   text-align: center;
@@ -123,4 +113,22 @@
 .btn:hover {
   color: #fff;
   background-image: linear-gradient(to left, #11af2b, #6ba31c);
+}
+@media screen and (max-width: 992px) {
+  .scientificResearch{
+ height: 500px;
+  }
+  .content{
+    top:50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 30px;
+  }
 }

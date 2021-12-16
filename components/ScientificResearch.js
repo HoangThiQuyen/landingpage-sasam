@@ -16,7 +16,7 @@ export default function ScientificResearch() {
     <div>
       <div className={styles.scientificResearch}>
         <div className={styles.overlay}></div>
-        <div>
+        <div className="d-none d-lg-block">
           <Image src={scientificResearchLine} alt="scientificResearchLine" />
         </div>
         <div>

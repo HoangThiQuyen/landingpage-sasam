@@ -68,3 +68,23 @@
     transform: rotate(1turn);
   }
 }
+
+@media screen and (max-width: 992px){
+  .title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .iconRectangle{
+    position:absolute;
+    top: -30%;
+    right: 0%;
+  }
+  .iconPlus{
+    position:absolute;
+    top: -5%;
+    left: 5%;
+    animation: rotateIn 10s linear infinite;
+  }
+  
+}

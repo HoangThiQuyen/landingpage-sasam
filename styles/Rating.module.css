@@ -9,9 +9,7 @@
   color:#fff;
   font-family: "Nunito", sans-serif;
 }
-.ratingItem{
-  
-}
+
 .avatar{
   padding:10px;
   background-color: #fff;
@@ -67,6 +65,15 @@ position: relative;
   top: 10%; left: 12%;
   animation: leftToRight 10s linear infinite;
 }
+.comment{
+  width:100%;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+}
 @keyframes rotateIn {
   0% {
     
@@ -96,6 +103,31 @@ position: relative;
   }
   100% {
     transform: translateX(20px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 100px;
+  
+  }
+  .circleIcon{
+    position: absolute;
+    top: -7%; right: 12%;
+    animation: rotateIn 10s linear infinite;
+  }
+  .iconAnimation{
+    position: absolute;
+    top: 15%; left: 10%;
+    animation: leftToRight 10s linear infinite;
   }
 }
 
