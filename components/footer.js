@@ -122,7 +122,7 @@ export default function Footer() {
             </div>
             <div className=" col-lg-3">
               <h2 className={styles.footerTitle2}>GIỜ MỞ CỬA</h2>
-              <p>Từ 7:00 - 17:00 từ thứ 2 đến thứ 7 hằng tuần.</p>
+              <p>24/24 từ thứ 2 đến thứ 7 hằng tuần.</p>
               <div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.1701863129338!2d106.37685011474144!3d10.247854471529394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa9195af3ad7d%3A0xe8db798fef1b7e85!2zQ8O0bmcgdHkgQ-G7lSBQaOG6p24gVOG6rXAgxJBvw6BuIFNhIFPDom0gVmnhu4d0!5e0!3m2!1svi!2s!4v1639558756275!5m2!1svi!2s"

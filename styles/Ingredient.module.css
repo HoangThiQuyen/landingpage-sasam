@@ -77,3 +77,34 @@
 .ingredientItem{
   height: 33.33% !important;
 }
+@media screen and (max-width:992px){
+  .ingredientItem{
+   justify-content:start !important;
+   margin-top: 2px;
+  }
+  .ingredientItem h4{
+    font-size:18px;
+    margin-left: 7px;
+  }
+  .ingredientItem h4 span{
+    font-size:20px;
+  }
+  .title{
+    font-size:30px;
+    margin-bottom: 30px;
+  
+  }
+  .leafIcon{
+    height:60px;
+    width: 60px;
+  }
+  .leafIcon1{
+    width: 60px;
+    height:60px;
+    bottom: 0%;
+  }
+  .ingredient{
+    margin-top:70px;
+  }
+}
+

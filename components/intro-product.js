@@ -28,7 +28,7 @@ export default function IntroProduct() {
         />
       </Head>
       <div className="row align-items-center">
-        <div className="col-5">
+        <div className="col-lg-5">
           <h1 className={`${styles.title} wow fadeInDown`}>
             Sarmentosa immune support
           </h1>
@@ -52,7 +52,7 @@ export default function IntroProduct() {
             </button>
           </div>
         </div>
-        <div className="col-7 position-relative">
+        <div className="col-lg-7 position-relative mt-5 mt-lg-0">
           <div className="row">
             <div className={` col-6 `}>
               <Image
