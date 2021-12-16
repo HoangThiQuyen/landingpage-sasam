@@ -41,7 +41,7 @@ export default function Rating() {
       <h1 className={styles.title}>Người dùng đánh giá</h1>
       <div className="container ">
         <div className="row justify-content-center align-items-center">
-          <div className="col-6">
+          <div className="col-lg-6">
             <ReactPlayer
               url="https://www.youtube.com/watch?v=r7XLUXQLZWY&ab_channel=SaS%C3%A2mVi%E1%BB%87t"
               className="react-player-video my-2 rounded overflow-hidden"
@@ -50,12 +50,12 @@ export default function Rating() {
               controls={true}
             />
           </div>
-          <div className="col-6">
+          <div className="col-lg-6">
             <Swiper {...params} className={styles.swiperRating}>
               {new Array(4).fill(
                 <SwiperSlide className={styles.ratingItem}>
                   <div>
-                    <div className={styles.quotation}>
+                    <div className={`${styles.quotation} d-none d-lg-block`}>
                       <Image src={quotation} alt="quotation" />
                     </div>
                     <div className="d-flex align-items-center">
@@ -104,7 +104,7 @@ export default function Rating() {
                       </div>
                     </div>
                     <div className="mt-4">
-                      <p>
+                      <p className={styles.comment}>
                         There are many variations of passages of Lorem Ipsum
                         available, but the majority have suffered alteration in
                         some form, by injected humour, or randomised words which
