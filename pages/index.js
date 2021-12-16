@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import News from "../components/news";
 import Achievement from "../components/achievement";
 import ScientificResearch from "../components/ScientificResearch";
+import ComunityActivity from "../components/ComunityActivity";
 import Footer from "../components/footer";
 // Images
 import CartImg from "../public/image/cart_icon.png";
@@ -66,11 +67,12 @@ export default function Home() {
       {/* Câu chuyện khát vọng */}
       <Stories />
 
-      {/* Tin tức nổi bật */}
-      <News />
-
       {/* Thành tựu nổi bật */}
       <Achievement />
+      {/* Hoạt động cộng đồng */}
+      <ComunityActivity />
+      {/* Tin tức nổi bật */}
+      <News />
 
       {/* Nghiên cứu khoa học  */}
       <ScientificResearch />

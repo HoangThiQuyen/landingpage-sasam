@@ -1,21 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
-.promotion {
-  margin-top: 30px;
-  position: relative;
-}
-.content {
-  color: #4c4c4c;
-  font-family: "Raleway", sans-serif;
-  background: url("../public/image/bg-promotion.png") no-repeat;
-  /* background-size: cover; */
-  /* background-position: center center; */
-  background-size: cover;
-  min-height: 500px;
-}
-.content h1 {
-  font-size: 100px;
-  font-weight: bolder;
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 30px !important;
+  }
 }
 
 .title {
@@ -32,6 +20,7 @@
   margin-top: 150px;
   margin-bottom: 70px;
 }
+
 .title::after {
   display: block;
   height: 5px;
@@ -42,19 +31,10 @@
   margin: 0 auto;
   margin-top: 10px;
 }
-.promotionText {
+
+.promotionText h1 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
   font-family: "Ephesis";
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -20%);
-}
-.promotionContent {
-  font-size: 50px;
-  font-weight: 600;
-  font-family: "Ephesis";
-  position: absolute;
-  top: 80%;
-  right: -3%;
-  transform: translate(-50%, -3%);
 }

@@ -44,11 +44,27 @@ a {
 .timeline-item-title {
   margin-bottom: 30px;
 }
-.card-media-wrapper {
+/* .card-media-wrapper {
   display: none;
+} */
+/* .MediaDetailsWrapper {
+  display: none;
+} */
+/* .css-d0st9p-CardImage {
+  max-height: 120% !important;
+} */
+.css-mpnodf-TimelineTitleWrapper {
+  width: 7% !important;
 }
-.MediaDetailsWrapper {
-  display: none;
+.css-d0st9p-CardImage {
+  margin: 10px 0;
+  object-fit: cover !important;
+  min-width: 60% !important;
+  min-height: 220px !important;
+  border-radius: 7px;
+}
+.css-3i23bs-TimelineMainWrapper {
+  height: 100vh !important;
 }
 
 .css-14uf6p-TimelineItemContentWrapper {
@@ -88,5 +104,3 @@ a {
 .show-more {
   display: none !important;
 }
-
-/*  */

@@ -35,3 +35,9 @@
   transform: rotate(180deg);
   background-color: #f4faf4;
 }
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 30px !important;
+  }
+}

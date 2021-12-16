@@ -1,7 +1,7 @@
 .bg {
   /* margin-top: 150px; */
   background: url("../public/image/bg-effect.jpg") center center no-repeat;
-  min-height: 800px;
+  min-height: 700px;
   position: relative;
 }
 .overlay {
@@ -13,7 +13,7 @@
   background: rgba(0, 0, 0, 0.5);
 }
 .effectItem {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   height: 200px;
   /* background: red; */
@@ -75,4 +75,18 @@
   width: 22%;
   margin: 0 auto;
   margin-top: 10px;
+}
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 30px !important;
+  }
+  .effectItem p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    font-family: "Nunito";
+  }
+  .bg {
+    min-height: 600px !important;
+  }
 }
