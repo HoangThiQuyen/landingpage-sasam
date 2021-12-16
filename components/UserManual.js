@@ -13,11 +13,13 @@ export default function UserManual() {
       <div className="container">
         <h1 className={styles.title}>Hướng dẫn sử dụng</h1>
         <div className="row">
-          <div className="col-6 ">
+          <div className="col-lg-6 ">
             <Image src={userManual} alt="userManual" />
           </div>
-          <div className="col-6">
-            <div className={` ${styles.Item} ml-5 d-flex align-items-center`}>
+          <div className="col-lg-6">
+            <div
+              className={` ${styles.Item} ml-5 d-block d-lg-flex align-items-center text-center text-lg-start my-5 my-lg-0`}
+            >
               <Image src={manual1} alt="manual1" />
               <div className={`${styles.manualItem}`}>
                 <h4> Giảm đau họng</h4>
@@ -28,7 +30,9 @@ export default function UserManual() {
               </div>
             </div>
 
-            <div className={` ${styles.Item} ml-5 d-flex align-items-center`}>
+            <div
+              className={` ${styles.Item} ml-5 d-block d-lg-flex align-items-center text-center text-lg-start mb-5 mb-lg-0`}
+            >
               <Image src={manual2} alt="manual1" />
               <div className={`${styles.manualItem}`}>
                 <h4>Giảm ho</h4>
@@ -39,7 +43,9 @@ export default function UserManual() {
                 </p>
               </div>
             </div>
-            <div className={` ${styles.Item} ml-5 d-flex align-items-center`}>
+            <div
+              className={` ${styles.Item} ml-5 d-block d-lg-flex align-items-center text-center text-lg-start mb-5 mb-lg-0`}
+            >
               <Image src={manual3} alt="manual1" />
               <div className={`${styles.manualItem}`}>
                 <h4>Cải thiện loét miệng</h4>
