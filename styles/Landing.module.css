@@ -63,15 +63,368 @@
   left:51%;
     overflow:hidden;  
 }
-.iconHand{
- position: absolute;
- right: 8%;
- bottom:-32%;
- animation-name: icon;
- animation-duration: 15s;
- animation-iteration-count:infinite;
 
+/* reponsive */
+
+@media  screen and (min-width:1023px) and (max-width:1350px){
+  .content{
+    position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Ephesis';
+  font-size:70px;
+  }
+  .bgLine{
+    position: absolute;
+    bottom: -0.5%;
+    transform: skewY(15deg);
+  }
+  .bgLine1{
+    position: absolute;
+    top: -1.2%;
+   
+  }
+  .bgLine2{
+    position: absolute;
+    bottom: -0.9%;   
+  }
+  .logo{
+    transform: skewY(-10deg);
+    margin-top: 105px; 
+    width: 150px; height:150px;
+  
+  }
+  .background{
+    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+    position: absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    top: 0;
+    width: 98.9vw;
+    z-index: -1;
+    transform: skewY(10deg);
+    height:570px;
+  }
+  .video{
+    width: 100vw;
+    transform: skewY(15deg);
+    
+   }
+   .bgvideo{
+     position: relative;
+     transform: skewY(-15deg);
+     overflow: hidden;
+   }
+   .overlay{
+     position: absolute;
+     right:0;
+     bottom:0;
+     left:0;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.55);
+     transform: skewY(15deg);
+     width: 102vw;
+   }
+   .iconHand{
+    position: absolute;
+    right: 8%;
+    bottom:-10%;
+    animation-name: icon;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    width: 130px;
+   }
 }
+
+@media  screen and (min-width:768px) and (max-width:1023px){
+  .content{
+    position: absolute;
+    color: #fff;
+    font-family: 'Ephesis';
+    font-size:50px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bgLine{
+    position: absolute;
+    bottom: -0.5%;
+    transform: skewY(12deg);
+  }
+  .bgLine1{
+    position: absolute;
+    top: -1.2%;
+   
+  }
+  .bgLine2{
+    position: absolute;
+    bottom: -1%;   
+  }
+  .logo{
+    transform: skewY(-8deg);
+    margin-top: 60px; 
+    width: 100px; height:100px;
+  
+  }
+  .background{
+    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+    position: absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    top: 0;
+    width: 98.9vw;
+    z-index: -1;
+    transform: skewY(8deg);
+    height:500px;
+  }
+  .video{
+    width: 100vw;
+    transform: skewY(12deg);
+    
+   }
+   .bgvideo{
+     position: relative;
+     transform: skewY(-12deg);
+     overflow: hidden;
+   }
+   .overlay{
+     position: absolute;
+     right:0;
+     bottom:0;
+     left:0;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.55);
+     transform: skewY(12deg);
+     width: 102vw;
+   }
+   .iconHand{
+   display:none;
+   
+   }
+}
+
+@media  screen and (min-width:576px) and (max-width:768px){
+  .content{
+    position: absolute;
+    color: #fff;
+    font-family: 'Ephesis';
+    font-size:40px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bgLine{
+    position: absolute;
+    bottom: -0.5%;
+    transform: skewY(12deg);
+  }
+  .bgLine1{
+    position: absolute;
+    top: -1.5%;
+   
+  }
+  .bgLine2{
+    position: absolute;
+    bottom: -1.5%;   
+  }
+  .logo{
+    transform: skewY(-8deg);
+    margin-left: 15px;
+    margin-top: 45px; 
+    width: 80px; height:80px;
+  
+  }
+  .background{
+    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+    position: absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    top: 0;
+    width: 98.9vw;
+    z-index: -1;
+    transform: skewY(8deg);
+    height:370px;
+  }
+  .video{
+    width: 100vw;
+    transform: skewY(12deg);
+    
+   }
+   .bgvideo{
+     position: relative;
+     transform: skewY(-12deg);
+     overflow: hidden;
+   }
+   .overlay{
+     position: absolute;
+     right:0;
+     bottom:0;
+     left:0;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.55);
+     transform: skewY(12deg);
+     width: 102vw;
+   }
+   .iconHand{
+   display:none;
+   
+   }
+}
+
+@media  screen and (min-width:450px) and (max-width:576px){
+  .content{
+    position: absolute;
+    color: #fff;
+    font-family: 'Ephesis';
+    font-size:30px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bgLine{
+    position: absolute;
+    bottom: -0.8%;
+    transform: skewY(12deg);
+  }
+  .bgLine1{
+    position: absolute;
+    top: -2%;
+   
+  }
+  .bgLine2{
+    position: absolute;
+    bottom: -1.7%;   
+  }
+  .logo{
+    transform: skewY(-6deg);
+    margin-left: 10px;
+    margin-top: 30px; 
+    width: 60px; height:60px;
+  
+  }
+  .background{
+    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+    position: absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    top: 0;
+    width: 98.9vw;
+    z-index: -1;
+    transform: skewY(6deg);
+    height:300px;
+  }
+  .video{
+    width: 100vw;
+    transform: skewY(12deg);
+    
+   }
+   .bgvideo{
+     position: relative;
+     transform: skewY(-12deg);
+     overflow: hidden;
+   }
+   .overlay{
+     position: absolute;
+     right:0;
+     bottom:0;
+     left:0;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.55);
+     transform: skewY(12deg);
+     width: 102vw;
+   }
+   .iconHand{
+   display:none;
+   
+   }
+}
+@media  screen and (max-width:450px){
+  .content{
+    position: absolute;
+    color: #fff;
+    font-family: 'Ephesis';
+    font-size:20px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bgLine{
+    position: absolute;
+    bottom: -2.2%;
+    transform: skewY(15deg);
+  }
+  .bgLine1{
+    position: absolute;
+    top: -3%;
+   
+  }
+  .bgLine2{
+    position: absolute;
+    bottom: -2.5%;   
+  }
+  .logo{
+    transform: skewY(-6deg);
+    margin-left: 7px;
+    margin-top: 24px; 
+    width: 50px; height:50px;
+  
+  }
+  .background{
+    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+    position: absolute;
+    right:0;
+    bottom:0;
+    left:0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+    transform: skewY(6deg);
+    height:220px;
+  }
+  .video{
+    width: 100vw;
+    transform: skewY(15deg);
+    
+   }
+   .bgvideo{
+     position: relative;
+     transform: skewY(-15deg);
+     overflow: hidden;
+   }
+   .overlay{
+     position: absolute;
+     right:0;
+     bottom:0;
+     left:0;
+     top: 0;
+     background-color: rgba(0, 0, 0, 0.55);
+     transform: skewY(15deg);
+     width: 102vw;
+   }
+   .iconHand{
+   display:none;
+   
+   }
+}
+
+
+.iconHand{
+  position: absolute;
+  right: 8%;
+  bottom:-32%;
+  animation-name: icon;
+  animation-duration: 15s;
+  animation-iteration-count:infinite;
+ }
+
+
+
 
 @keyframes icon{
   0% {
@@ -91,8 +444,4 @@
   100%{
     transform: translateY(0);
   }
-  /* 100%{
-    transform: translateX(-30px);
-    transform: translateY(0px);
-  } */
 }

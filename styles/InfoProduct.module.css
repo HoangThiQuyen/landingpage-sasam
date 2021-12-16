@@ -56,3 +56,18 @@
   color: #fff;
   background-image: linear-gradient(to left, #11af2b, #6ba31c);
 }
+
+/* reponsive */
+@media  screen and (max-width:992px){
+  .infoProduct {
+    font-family: "Nunito";
+    margin-top: 90px;
+  }
+  .title {
+    font-family: "Ephesis";
+    font-size: 35px;
+    color: #383b6d;
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+}

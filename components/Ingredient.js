@@ -6,6 +6,7 @@ import ingredientImage from "../public/image/ingredient.png";
 import ingredientLine from "../public/image/ingredient_line_top.png";
 import leaf from "../public/image/leaf.png";
 import leaf1 from "../public/image/leaf1.png";
+import ingreSmall from "../public/image/ingre_small.png";
 import { useEffect } from "react";
 
 // wow
@@ -31,10 +32,19 @@ export default function Ingredient() {
       <div className="container pb-5">
         <h1 className={`text-center ${styles.title} mt-5`}>Thành phần</h1>
         <div className={`row  ${styles.content}`}>
-          <div className="col-4">
+          <div className="col-md-6 col-lg-4">
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
             >
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreSmall}
+                  alt="ingreSmall"
+                  width="70"
+                  height="70"
+                />
+              </div>
+
               <h4>
                 Cát cánh <span>( Platycodon grandiflorum )</span>
               </h4>
@@ -42,6 +52,14 @@ export default function Ingredient() {
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
             >
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreSmall}
+                  alt="ingreSmall"
+                  width="70"
+                  height="70"
+                />
+              </div>
               <h4>
                 Bán hạ <span>( Typhonium divaricatum Decne )</span>
               </h4>
@@ -49,18 +67,34 @@ export default function Ingredient() {
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
             >
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreSmall}
+                  alt="ingreSmall"
+                  width="70"
+                  height="70"
+                />
+              </div>
               <h4>
                 Tỳ bà diệp <span>( Eriobotrys japonica )</span>
               </h4>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-6 col-lg-4 d-none d-lg-block ">
             <Image src={ingredientImage} alt="ingredientImage" />
           </div>
-          <div className="col-4">
+          <div className="col-md-6 col-lg-4">
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-start align-items-center`}
             >
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreSmall}
+                  alt="ingreSmall"
+                  width="70"
+                  height="70"
+                />
+              </div>
               <h4>
                 Sa Sâm Việt <span>( Sarmentosa )</span>
               </h4>
@@ -68,6 +102,14 @@ export default function Ingredient() {
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-start align-items-center`}
             >
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreSmall}
+                  alt="ingreSmall"
+                  width="70"
+                  height="70"
+                />
+              </div>
               <h4>
                 Bạc hà diệp <span>( Menthg Arvensis Lin )</span>
               </h4>
@@ -75,6 +117,14 @@ export default function Ingredient() {
             <div
               className={`${styles.ingredientItem} d-flex justify-content-start align-items-center`}
             >
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreSmall}
+                  alt="ingreSmall"
+                  width="70"
+                  height="70"
+                />
+              </div>
               <h4>
                 Tang bạch bi <span>( Cortex mori Albae Radicis )</span>
               </h4>
