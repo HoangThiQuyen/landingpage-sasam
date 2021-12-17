@@ -22,6 +22,7 @@ import MessageImg from "../public/image/message_icon.png";
 import Image from "next/image";
 // css
 import styles from "../styles/Home.module.css";
+import Head from "next/head";
 
 export default function Home() {
   const [showIcon, setShowIcon] = useState(false);
@@ -37,6 +38,85 @@ export default function Home() {
   }, []);
   return (
     <div>
+      <Head>
+        <title> Sa Sâm Việt</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Sa Sâm Việt" />
+
+        {/* Carousel */}
+        <meta property="og:title" content="Dược liệu vùng cát biển" />
+        <meta
+          name="carousel"
+          content="Doanh nghiệp đầu tiên tại Việt Nam và trên Thế giới trồng sâm trên cát biển. Nghiên cứu được đăng trên tạp chí khoa học Thế giới"
+        />
+
+        {/* Thông tin sản phẩm */}
+        <meta
+          property="og:title"
+          content="SARMENTOSA IMMUNE SUPPORT (75 ml) (Bổ phế hóa đờm)"
+        />
+        <meta property="og:price:amount" content="220,000₫" />
+        <meta property="og:price:currency" content="VND" />
+        <meta
+          property="og:description"
+          content="Quy cách: Chai dạng xịt 750mlCông dụng:Hỗ trợ bổ phế, giảm đờmGiúp giảm ho gió, ho khan, ho có đờm, ho lâu ngày do viêm phế quản, viêm họng"
+        />
+
+        {/* Khuyến mãi */}
+        <meta property="og:title" content="Khuyến mãi" />
+        <meta
+          name="sale"
+          content="Tri ân khách hàng, tưng bừng khuyến mãi lên đến 20%"
+        />
+
+        {/* Công dụng */}
+        <meta property="og:title" content="Công dụng" />
+        <meta
+          name="congdung"
+          content="(Dứt điểm ho gió, ho khan, ho có đờm)( Xịt họng, kháng khuẩn) (Giảm viêm, ngăn ngừa virut) (Bổ phế, hóa đờm)"
+        />
+
+        {/*  Cơ chế tác dụng */}
+        <meta property="og:title" content="Cơ chế tác dụng" />
+        <meta
+          name="cochetacdung"
+          content="Giữ ấm vòm họng, dinh dưỡng tế bào, thải độc tố, tăng cường khả năng miễn dịch"
+        />
+        {/* Đối tượng sử dụng */}
+        <meta property="og:title" content="Đối tượng sử dụng" />
+        <meta
+          name="doituongsudung"
+          content="Người lớn và trẻ em trên 1 tuổi bị đau họng"
+        />
+
+        {/* Câu chuyện khát vọng */}
+        <meta property="og:title" content="Câu chuyện khát vọng" />
+        <meta
+          name="doituongsudung"
+          content="Mang lại sản phẩm tốt nhất đến với người dùng."
+        />
+
+        {/* Thành tựu nổi bật */}
+        <meta property="og:title" content="Thành tựu nổi bật" />
+        <meta
+          name="achievement"
+          content='(Chứng nhận đạt tiêu chuẩn HACCP)(Chứng nhận đạt tiêu chuẩn ISO)(Chứng nhận cơ sở đủ điều kiện an toàn thực phẩm)(Chứng nhận doanh nghiệp khoa học và công nghệ)(Đạt giải nhì cuộc thi "Dự án khởi nghiệp Quốc gia 2018" tổ chức tại Đà Nẵng)'
+        />
+
+        {/*  Tin tức nổi bật */}
+        <meta property="og:title" content="Tin tức" />
+        <meta
+          name="news"
+          content="Phát hiện nhiều hợp chất quý giá trong sasam Việt Nam"
+        />
+
+        {/* Nghiên cứu khoa học */}
+        <meta property="og:title" content="Nghiên cứu khoa học" />
+        <meta
+          name="nghiencuukhoahoc"
+          content="Sâm trông trên cát biển duy nhất tại Việt Nam. Đề tài nghiên cứu đã được đăng trên tạp chí khoa học Quốc tế. Các hoạt chất quý hiếm thuộc nhóm hàng đầu thế giới trong cây Sa Sâm Việt"
+        />
+      </Head>
       {/* Banner */}
       <Carousel />
 

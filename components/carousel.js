@@ -32,13 +32,6 @@ export default function Carousel() {
 
   return (
     <div>
-      <Head>
-        <title>My Carousel</title>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-        />
-      </Head>
       <div>
         <div className={styles.bgvideo}>
           <video ref={videoRef} autoPlay loop muted className={styles.video}>

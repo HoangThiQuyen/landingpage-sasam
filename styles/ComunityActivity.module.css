@@ -24,3 +24,17 @@
   font-size: 20px;
   color: #42407c;
 }
+
+@media screen and (max-width: 992px) {
+  .title {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}

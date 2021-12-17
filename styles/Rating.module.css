@@ -126,7 +126,7 @@ position: relative;
   }
   .iconAnimation{
     position: absolute;
-    top: 15%; left: 10%;
+    top: 3%; left: 10%;
     animation: leftToRight 10s linear infinite;
   }
 }

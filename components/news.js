@@ -23,6 +23,25 @@ export default function News() {
     navigation: {
       clickable: true,
     },
+    spaceBetween: 30,
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
   };
   const data = [
     {
@@ -50,7 +69,7 @@ export default function News() {
       <h2 className={styles.title}>Tin tức nổi bật</h2>
       <div className="container">
         <div className="row  align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-5 mb-lg-0">
             <Swiper {...params} className="mySwiper">
               {data.map((ele) => (
                 <SwiperSlide key={ele.id} className={styles.newItem}>
