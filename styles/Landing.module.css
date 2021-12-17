@@ -1,492 +1,530 @@
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap'); */
 
-
-.video{
- width: 100vw;
- transform: skewY(18deg);
+.video {
+  width: 100vw;
+  transform: skewY(18deg);
 }
-.bgvideo{
+.bgvideo {
   position: relative;
   transform: skewY(-18deg);
   overflow: hidden;
 }
-.overlay{
+.overlay {
   position: absolute;
-  right:0;
-  bottom:0;
-  left:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.55);
   transform: skewY(18deg);
   width: 102vw;
 }
-.background{
-  background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+.background {
+  background: linear-gradient(
+    to right,
+    #f6efcb,
+    #e4d8a4,
+    #d4c3b3,
+    #0297d0,
+    #2b4b8e
+  );
   position: absolute;
-  right:0;
-  bottom:0;
-  left:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   top: 0;
   width: 98.9vw;
   z-index: -1;
   /* transform: skewY(20deg); */
-  height:860px;
+  height: 860px;
 }
-.logo{
+.logo {
   /* transform: skewY(-20deg); */
   margin-left: 23px;
   margin-top: 10px;
 }
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'Ephesis';
-  font-size:100px;
+  font-family: "Ephesis";
+  font-size: 100px;
 }
-.bgLine{
+.bgLine {
   position: absolute;
   bottom: 0.2%;
-  overflow:hidden;
+  overflow: hidden;
   transform: skewY(18deg);
 }
-.bgLine1{
+.bgLine1 {
   position: absolute;
   top: -1%;
-  overflow:hidden;
+  overflow: hidden;
   transform: rotate(180deg);
 }
-.bgLine2{
+.bgLine2 {
   position: absolute;
   bottom: -0.6%;
-  left:51%;
-    overflow:hidden;  
+  left: 51%;
+  overflow: hidden;
 }
 
 /* reponsive */
-@media  screen and (min-width:1350px) and (max-width:1500px){
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+@media screen and (min-width: 1350px) and (max-width: 1500px) {
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(10deg); */
-    height:800px;
+    height: 800px;
   }
-  .content{
+  .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-family: 'Ephesis';
-    font-size:85px;
+    font-family: "Ephesis";
+    font-size: 85px;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-20deg); */
     margin-left: 20px;
     margin-top: 30px;
-    width: 170px; height:170px;
+    width: 170px;
+    height: 170px;
   }
 }
 
-@media  screen and (min-width:1100px) and (max-width:1350px){
-  .content{
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+  .content {
     position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: 'Ephesis';
-  font-size:65px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Ephesis";
+    font-size: 65px;
   }
-  .bgLine{
+  .bgLine {
     position: absolute;
     bottom: -0.5%;
     transform: skewY(15deg);
   }
-  .bgLine1{
+  .bgLine1 {
     position: absolute;
     top: -1.2%;
-   
   }
-  .bgLine2{
+  .bgLine2 {
     position: absolute;
-    bottom: -0.9%;   
+    bottom: -0.9%;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-10deg); */
-    margin-top: 30px; 
-    width: 150px; height:150px;
-  
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
   }
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(10deg); */
-    height:730px;
+    height: 730px;
   }
-  .video{
+  .video {
     width: 100vw;
     transform: skewY(15deg);
-    
-   }
-   .bgvideo{
-     position: relative;
-     transform: skewY(-15deg);
-     overflow: hidden;
-   }
-   .overlay{
-     position: absolute;
-     right:0;
-     bottom:0;
-     left:0;
-     top: 0;
-     background-color: rgba(0, 0, 0, 0.55);
-     transform: skewY(15deg);
-     width: 102vw;
-   }
-   .iconHand{
+  }
+  .bgvideo {
+    position: relative;
+    transform: skewY(-15deg);
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: skewY(15deg);
+    width: 102vw;
+  }
+  .iconHand {
     position: absolute;
     right: 8%;
-    bottom:-10%;
+    bottom: -10%;
     animation-name: icon;
     animation-duration: 15s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     width: 130px;
-   }
+  }
 }
 
-@media  screen and (min-width:992px) and (max-width:1100px){
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(8deg); */
-    height:570px;
+    height: 570px;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-10deg); */
-    margin-top: 30px; 
-    width: 130px; height:130px;
-  
+    margin-top: 30px;
+    width: 130px;
+    height: 130px;
   }
-  .content{
+  .content {
     position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: 'Ephesis';
-  font-size:55px !important;
-  z-index: 9;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Ephesis";
+    font-size: 55px !important;
+    z-index: 9;
   }
 }
-@media  screen and (min-width:768px) and (max-width:992px){
-  .content{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .content {
     position: absolute;
     color: #fff;
-    font-family: 'Ephesis';
-    font-size:50px;
+    font-family: "Ephesis";
+    font-size: 50px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .bgLine{
+  .bgLine {
     position: absolute;
     bottom: -0.5%;
     transform: skewY(12deg);
   }
-  .bgLine1{
+  .bgLine1 {
     position: absolute;
     top: -1.2%;
-   
   }
-  .bgLine2{
+  .bgLine2 {
     position: absolute;
-    bottom: -1%;   
+    bottom: -1%;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-8deg); */
-    margin-top: 20px; 
-    width: 100px; height:100px;
-  
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
   }
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(8deg); */
-    height:510px;
+    height: 510px;
   }
-  .video{
+  .video {
     width: 100vw;
     transform: skewY(12deg);
-    
-   }
-   .bgvideo{
-     position: relative;
-     transform: skewY(-12deg);
-     overflow: hidden;
-   }
-   .overlay{
-     position: absolute;
-     right:0;
-     bottom:0;
-     left:0;
-     top: 0;
-     background-color: rgba(0, 0, 0, 0.55);
-     transform: skewY(12deg);
-     width: 102vw;
-   }
-   .iconHand{
-   display:none;
-   
-   }
+  }
+  .bgvideo {
+    position: relative;
+    transform: skewY(-12deg);
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: skewY(12deg);
+    width: 102vw;
+  }
+  .iconHand {
+    display: none;
+  }
 }
 
-@media  screen and (min-width:576px) and (max-width:768px){
-  .content{
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .content {
     position: absolute;
     color: #fff;
-    font-family: 'Ephesis';
-    font-size:40px;
+    font-family: "Ephesis";
+    font-size: 40px;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .bgLine{
+  .bgLine {
     position: absolute;
     bottom: -0.5%;
     transform: skewY(12deg);
   }
-  .bgLine1{
+  .bgLine1 {
     position: absolute;
     top: -1.5%;
-   
   }
-  .bgLine2{
+  .bgLine2 {
     position: absolute;
-    bottom: -1.5%;   
+    bottom: -1.5%;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-8deg); */
     margin-left: 15px;
-    margin-top: 15px; 
-    width: 80px; height:80px;
-  
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
   }
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(8deg); */
-    height:430px;
+    height: 430px;
   }
-  .video{
+  .video {
     width: 100vw;
     transform: skewY(12deg);
-    
-   }
-   .bgvideo{
-     position: relative;
-     transform: skewY(-12deg);
-     overflow: hidden;
-   }
-   .overlay{
-     position: absolute;
-     right:0;
-     bottom:0;
-     left:0;
-     top: 0;
-     background-color: rgba(0, 0, 0, 0.55);
-     transform: skewY(12deg);
-     width: 102vw;
-   }
-   .iconHand{
-   display:none;
-   
-   }
+  }
+  .bgvideo {
+    position: relative;
+    transform: skewY(-12deg);
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: skewY(12deg);
+    width: 102vw;
+  }
+  .iconHand {
+    display: none;
+  }
 }
 
-@media  screen and (min-width:450px) and (max-width:576px){
-  .content{
+@media screen and (min-width: 450px) and (max-width: 576px) {
+  .content {
     position: absolute;
     color: #fff;
-    font-family: 'Ephesis';
-    font-size:30px;
+    font-family: "Ephesis";
+    font-size: 30px;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .bgLine{
+  .bgLine {
     position: absolute;
     bottom: -0.8%;
     transform: skewY(12deg);
   }
-  .bgLine1{
+  .bgLine1 {
     position: absolute;
     top: -2%;
-   
   }
-  .bgLine2{
+  .bgLine2 {
     position: absolute;
-    bottom: -1.7%;   
+    bottom: -1.7%;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-6deg); */
     margin-left: 10px;
-    margin-top: 10px; 
-    width: 60px; height:60px;
-  
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
   }
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(6deg); */
-    height:330px;
+    height: 330px;
   }
-  .video{
+  .video {
     width: 100vw;
     transform: skewY(12deg);
-    
-   }
-   .bgvideo{
-     position: relative;
-     transform: skewY(-12deg);
-     overflow: hidden;
-   }
-   .overlay{
-     position: absolute;
-     right:0;
-     bottom:0;
-     left:0;
-     top: 0;
-     background-color: rgba(0, 0, 0, 0.55);
-     transform: skewY(12deg);
-     width: 102vw;
-   }
-   .iconHand{
-   display:none;
-   
-   }
+  }
+  .bgvideo {
+    position: relative;
+    transform: skewY(-12deg);
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: skewY(12deg);
+    width: 102vw;
+  }
+  .iconHand {
+    display: none;
+  }
 }
-@media  screen and (max-width:450px){
-  .content{
+@media screen and (max-width: 450px) {
+  .content {
     position: absolute;
     color: #fff;
-    font-family: 'Ephesis';
-    font-size:20px;
+    font-family: "Ephesis";
+    font-size: 20px;
     top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .bgLine{
+  .bgLine {
     position: absolute;
     bottom: -2.2%;
     transform: skewY(15deg);
   }
-  .bgLine1{
+  .bgLine1 {
     position: absolute;
     top: -3%;
-   
   }
-  .bgLine2{
+  .bgLine2 {
     position: absolute;
-    bottom: -2.5%;   
+    bottom: -2.5%;
   }
-  .logo{
+  .logo {
     /* transform: skewY(-6deg); */
     margin-left: 7px;
-    margin-top: 5px; 
-    width: 50px; height:50px;
-  
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
   }
-  .background{
-    background:linear-gradient(to right,#f6efcb,#e4d8a4,#d4c3b3,#0297D0,#2B4B8E);
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
     position: absolute;
-    right:0;
-    bottom:0;
-    left:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     top: 0;
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(6deg); */
-    height:230px;
+    height: 230px;
   }
-  .video{
+  .video {
     width: 100vw;
     transform: skewY(15deg);
-    
-   }
-   .bgvideo{
-     position: relative;
-     transform: skewY(-15deg);
-     overflow: hidden;
-   }
-   .overlay{
-     position: absolute;
-     right:0;
-     bottom:0;
-     left:0;
-     top: 0;
-     background-color: rgba(0, 0, 0, 0.55);
-     transform: skewY(15deg);
-     width: 102vw;
-   }
-   .iconHand{
-   display:none;
-   
-   }
+  }
+  .bgvideo {
+    position: relative;
+    transform: skewY(-15deg);
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: skewY(15deg);
+    width: 102vw;
+  }
+  .iconHand {
+    display: none;
+  }
 }
 
-
-.iconHand{
+.iconHand {
   position: absolute;
   right: 8%;
-  bottom:-32%;
+  bottom: -32%;
   animation-name: icon;
   animation-duration: 15s;
-  animation-iteration-count:infinite;
- }
+  animation-iteration-count: infinite;
+}
 
-
-
-
-@keyframes icon{
+@keyframes icon {
   0% {
     transform: translateX(0px);
     transform: translateY(0px);
@@ -495,13 +533,12 @@
     transform: translateY(-50px);
   }
   50% {
-   
     transform: translateY(0);
   }
-  75%{
+  75% {
     transform: translateY(-50px);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
