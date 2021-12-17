@@ -56,7 +56,7 @@ export default function Effect() {
           >
             {data.map((ele) => (
               <div key={ele.id} className="text-center">
-                <Image src={ele.img} alt="imgs" width={150} height={150} />
+                <Image src={ele.img} alt="imgs" width={200} height={200} />
                 <p>{ele.title}</p>
               </div>
             ))}
