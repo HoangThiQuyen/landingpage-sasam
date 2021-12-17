@@ -15,6 +15,7 @@ import Achievement from "../components/achievement";
 import ScientificResearch from "../components/ScientificResearch";
 import ComunityActivity from "../components/ComunityActivity";
 import Footer from "../components/footer";
+import Certification from "../components/certification";
 // Images
 import CartImg from "../public/image/cart_icon.png";
 import PhoneImg from "../public/image/phone_icon.png";
@@ -146,6 +147,8 @@ export default function Home() {
 
       {/* Câu chuyện khát vọng */}
       <Stories />
+      {/*  Chứng nhận */}
+      <Certification />
 
       {/* Thành tựu nổi bật */}
       <Achievement />

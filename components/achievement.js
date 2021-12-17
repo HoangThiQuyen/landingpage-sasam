@@ -5,10 +5,57 @@ import Image from "next/image";
 import image1 from "../public/image/nat-1.jpg";
 import image2 from "../public/image/nat-2.jpg";
 import image3 from "../public/image/nat-3.jpg";
-import Head from "next/head";
 
 export default function Achievement() {
   const items = [
+    {
+      title: "2018",
+      // cardTitle: "Thành tựu",
+      cardDetailedText: [
+        "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
+        "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
+        "Đạt Top 10 thương hiệu tín nhiệm 2018",
+      ],
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+          src: image1,
+        },
+      },
+    },
+    {
+      title: "2019",
+      // cardTitle: "Thành tựu",
+      cardDetailedText: [
+        "Á quân dự án khởi nghiệp ứng dụng khoa học công nghiệp phát triển tài nguyên bản địa quốc gia năm 2021",
+        "Chung kết, Techfest quốc tế 2018 tại Đà Nẵng",
+      ],
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+          src: image2,
+        },
+      },
+    },
+    {
+      title: "2020",
+      // cardTitle: "Thành tựu",
+
+      cardDetailedText: [
+        "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
+        "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
+        "Đạt Top 10 thương hiệu tín nhiệm 2018",
+      ],
+      media: {
+        type: "IMAGE",
+        source: {
+          url: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+          src: image3,
+        },
+      },
+    },
     {
       title: "2021",
       // cardTitle: "Thành tựu",
@@ -25,38 +72,6 @@ export default function Achievement() {
         },
       },
     },
-    {
-      title: "2020",
-      // cardTitle: "Thành tựu",
-      cardDetailedText: [
-        "Á quân dự án khởi nghiệp ứng dụng khoa học công nghiệp phát triển tài nguyên bản địa quốc gia năm 2021",
-        "Chung kết, Techfest quốc tế 2018 tại Đà Nẵng",
-      ],
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-          src: image2,
-        },
-      },
-    },
-    {
-      title: "2019",
-      // cardTitle: "Thành tựu",
-
-      cardDetailedText: [
-        "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
-        "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
-        "Đạt Top 10 thương hiệu tín nhiệm 2018",
-      ],
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-          src: image3,
-        },
-      },
-    },
   ];
 
   return (
@@ -66,9 +81,10 @@ export default function Achievement() {
         <div className="d-none d-md-block">
           <Chrono
             items={items}
-            mode="VERTICAL"
+            // mode="VERTICAL"
+            activeItemIndex={1}
             hideControls={true}
-            scrollable={false}
+            scrollable={true}
           />
         </div>
         <div className="d-block d-md-none">
@@ -100,81 +116,6 @@ export default function Achievement() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        <div className="d-none">
-          <div>
-            <ul className="nav nav-tabs" id="myTab" role="tablist">
-              <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#home"
-                  type="button"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                >
-                  Home
-                </button>
-              </li>
-              <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                >
-                  Profile
-                </button>
-              </li>
-              <li className="nav-item" role="presentation">
-                <button
-                  className="nav-link"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact"
-                  aria-selected="false"
-                >
-                  Contact
-                </button>
-              </li>
-            </ul>
-            <div className="tab-content" id="myTabContent">
-              <div
-                className="tab-pane fade show active"
-                id="home"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-              >
-                ...
-              </div>
-              <div
-                className="tab-pane fade"
-                id="profile"
-                role="tabpanel"
-                aria-labelledby="profile-tab"
-              >
-                ...
-              </div>
-              <div
-                className="tab-pane fade"
-                id="contact"
-                role="tabpanel"
-                aria-labelledby="contact-tab"
-              >
-                ...
-              </div>
-            </div>
           </div>
         </div>
       </div>
