@@ -104,6 +104,9 @@ a {
 .css-mpnodf-TimelineTitleWrapper {
   width: 7% !important;
 }
+.css-1v979f3-TimelineMainWrapper{
+  left: 17% !important;
+}
 @media screen and (max-width: 992px) {
   .timeline-item-title {
     font-size: 15px !important;
