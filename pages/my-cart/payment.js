@@ -1,8 +1,9 @@
-import AddressStep from "components/home/stall/checkout/payment/AddressSteps";
-import PaymentStep from "components/home/stall/checkout/payment/PaymentSteps";
-import ReceiptSteps from "components/home/stall/checkout/payment/ReceiptSteps";
+import AddressStep from "../../components/checkout/payment/AddressSteps";
 
-import SubHeader from "components/home/stall/checkout/payment/SubHeader";
+import PaymentStep from "../../components/checkout/payment/PaymentSteps";
+import ReceiptSteps from "../../components/checkout/payment/ReceiptSteps";
+
+import SubHeader from "../../components/checkout/payment/SubHeader";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -24,7 +25,7 @@ const payment = () => {
     });
   };
   return (
-    <div>
+    <div className="container">
       <SubHeader />
       <div className="card card-custom card-transparent">
         <div className="card-body p-0">
