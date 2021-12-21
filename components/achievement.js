@@ -10,7 +10,7 @@ export default function Achievement() {
   const items = [
     {
       title: "2018",
-      // cardTitle: "Thành tựu",
+
       cardDetailedText: [
         "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
         "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
@@ -26,7 +26,7 @@ export default function Achievement() {
     },
     {
       title: "2019",
-      // cardTitle: "Thành tựu",
+
       cardDetailedText: [
         "Á quân dự án khởi nghiệp ứng dụng khoa học công nghiệp phát triển tài nguyên bản địa quốc gia năm 2021",
         "Chung kết, Techfest quốc tế 2018 tại Đà Nẵng",
@@ -41,7 +41,6 @@ export default function Achievement() {
     },
     {
       title: "2020",
-      // cardTitle: "Thành tựu",
 
       cardDetailedText: [
         "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
@@ -58,7 +57,7 @@ export default function Achievement() {
     },
     {
       title: "2021",
-      // cardTitle: "Thành tựu",
+
       cardDetailedText: [
         "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
         "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
