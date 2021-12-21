@@ -11,11 +11,9 @@ const SubHeader = () => {
         {/*begin::Info*/}
         <Breadcrumb>
           <BreadcrumbItem>
-            <Link href="/home/gian-hang"> Trang Chủ </Link>
+            <Link href="/">Sản phẩm</Link>
           </BreadcrumbItem>
-          <BreadcrumbItem>
-            <Link href="/gian-hang"> Gian Hàng </Link>
-          </BreadcrumbItem>
+
           <BreadcrumbItem active>
             <span> Giỏ hàng </span>
           </BreadcrumbItem>

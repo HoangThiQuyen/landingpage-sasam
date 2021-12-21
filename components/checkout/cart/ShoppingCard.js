@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Button } from "reactstrap";
@@ -53,7 +54,7 @@ const ShoppingCard = () => {
             <div className="dropdown dropdown-inline">
               <p
                 className="btn btn-primary font-weight-bolder font-size-sm"
-                onClick={() => history.push("/gian-hang")}
+                onClick={() => history.push("/")}
               >
                 Tiếp tục mua sắm
               </p>
@@ -79,7 +80,7 @@ const ShoppingCard = () => {
                 {listProduct.map((item, idx) => (
                   <tr key={item.id}>
                     <td className="d-flex align-items-center font-weight-bolder">
-                      <img
+                      <Image
                         src={item.image}
                         alt="images"
                         style={{

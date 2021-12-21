@@ -52,8 +52,8 @@ export default function Rating() {
           </div>
           <div className="col-lg-6">
             <Swiper {...params} className={styles.swiperRating}>
-              {new Array(4).fill(
-                <SwiperSlide className={styles.ratingItem}>
+              {[...new Array(4)].map((ele, idx) => (
+                <SwiperSlide className={styles.ratingItem} key={idx}>
                   <div>
                     <div className={`${styles.quotation} d-none d-lg-block`}>
                       <Image src={quotation} alt="quotation" />
@@ -113,7 +113,7 @@ export default function Rating() {
                     </div>
                   </div>
                 </SwiperSlide>
-              )}
+              ))}
             </Swiper>
           </div>
         </div>

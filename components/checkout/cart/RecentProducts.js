@@ -1,6 +1,7 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-const RecentProducts = ({listNewProduct}) => {
+const RecentProducts = ({ listNewProduct }) => {
   return (
     <div>
       <div className="card card-custom gutter-b">
@@ -14,16 +15,16 @@ const RecentProducts = ({listNewProduct}) => {
         </div>
 
         {/*end::Header*/}
-        {listNewProduct.map(item => (
+        {listNewProduct.map((item) => (
           <div
             className="card-body pt-2"
             key={item.id}
-            style={{paddingBottom: 4}}
+            style={{ paddingBottom: 4 }}
           >
             <div className="d-flex mb-4">
               <div className="symbol symbol-50 symbol-2by3 flex-shrink-0 mr-4">
                 <div className="d-flex flex-column">
-                  <img
+                  <Image
                     src={item.image}
                     alt="images"
                     style={{
@@ -45,12 +46,12 @@ const RecentProducts = ({listNewProduct}) => {
                 <span
                   className="text-muted font-weight-bold font-size-sm mb-2 "
                   style={{
-                    display: 'block',
-                    textOverflow: 'ellipsis',
-                    wordWrap: 'break-word',
-                    overflow: 'hidden',
-                    maxHeight: '3.6em',
-                    lineHeight: '1.8em',
+                    display: "block",
+                    textOverflow: "ellipsis",
+                    wordWrap: "break-word",
+                    overflow: "hidden",
+                    maxHeight: "3.6em",
+                    lineHeight: "1.8em",
                   }}
                 >
                   All it takes tank credibility is one glaring error All it
@@ -61,7 +62,10 @@ const RecentProducts = ({listNewProduct}) => {
 
                 <span className="text-muted font-weight-bold font-size-lg">
                   Giá:
-                  <span className="font-weight-bold" style={{color: '#6a5757'}}>
+                  <span
+                    className="font-weight-bold"
+                    style={{ color: "#6a5757" }}
+                  >
                     {item.price} đ
                   </span>
                 </span>
@@ -77,7 +81,7 @@ const RecentProducts = ({listNewProduct}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RecentProducts
+export default RecentProducts;

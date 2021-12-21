@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NewProducts = ({ listNewProduct }) => {
   return (
     <div>
@@ -21,7 +23,7 @@ const NewProducts = ({ listNewProduct }) => {
             <div className="d-flex mb-4">
               <div className="symbol symbol-50 symbol-2by3 flex-shrink-0 mr-4">
                 <div className="d-flex flex-column">
-                  <img
+                  <Image
                     src={item.image}
                     alt="images"
                     style={{

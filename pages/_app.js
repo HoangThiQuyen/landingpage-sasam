@@ -31,7 +31,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/sasam.ico" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          sizes="512x512"
+          href="/logo.png"
+        />
+        <link rel="shortcut icon" href="/logo.png" />
       </Head>
       <Component {...pageProps} />;
     </>
