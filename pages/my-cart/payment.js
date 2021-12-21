@@ -1,14 +1,15 @@
+import React, { useState } from "react";
 import AddressStep from "../../components/checkout/payment/AddressSteps";
 
 import PaymentStep from "../../components/checkout/payment/PaymentSteps";
 import ReceiptSteps from "../../components/checkout/payment/ReceiptSteps";
 
 import SubHeader from "../../components/checkout/payment/SubHeader";
-import React, { useState } from "react";
+
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
-const payment = () => {
+const Payment = () => {
   const [step, setStep] = useState(1);
   const MySwal = withReactContent(Swal);
 
@@ -180,4 +181,4 @@ const payment = () => {
   );
 };
 
-export default payment;
+export default Payment;
