@@ -118,15 +118,16 @@ export default function Home() {
           name="nghiencuukhoahoc"
           content="Sâm trông trên cát biển duy nhất tại Việt Nam. Đề tài nghiên cứu đã được đăng trên tạp chí khoa học Quốc tế. Các hoạt chất quý hiếm thuộc nhóm hàng đầu thế giới trong cây Sa Sâm Việt"
         />
+
         <link
+          rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
-          rel="stylesheet"
         />
+
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
           rel="stylesheet"
-        ></link>
-        <link rel="icon" href="/favicon.ico" />
+          href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+        />
       </Head>
       {/* Banner */}
       <Carousel />
@@ -175,7 +176,7 @@ export default function Home() {
       {showIcon && (
         <div className={styles.hotLine}>
           <div className={styles.icon}>
-            <Link href="https://shop.sasamviet.vn/my-cart">
+            <Link href="/my-cart">
               <a>
                 <Image src={CartImg} alt="cart_icon" width={100} height={100} />
               </a>

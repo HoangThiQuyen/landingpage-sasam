@@ -1,0 +1,133 @@
+.list.list-hover .list-item.active {
+  .bg-hover-white {
+    transition: all 0.15s ease;
+    background-color: #ffffff !important;
+  }
+  .text-hover-primary {
+    transition: color 0.15s ease, background-color 0.15s ease,
+      border-color 0.15s ease, box-shadow 0.15s ease;
+    color: #1eac52 !important;
+  }
+}
+
+.customBanner {
+  > div {
+    img {
+      height: auto !important;
+    }
+  }
+}
+
+.custom-img {
+  height: unset !important;
+}
+
+.unset-img > div {
+  position: unset !important;
+  height: 100%;
+}
+
+.image-field {
+  .delete-button {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: -10px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 25px 0 rgb(34 41 47 / 25%);
+    .delete-button {
+      opacity: 1;
+      top: 6px;
+      right: 6px;
+    }
+  }
+}
+
+/* -------------- news -------------------------*/
+.tin-tuc {
+  .tin-tuc-card {
+    .title-tin-tuc {
+      width: 100%; // chiều rộng bằng khối bao nó
+      display: -webkit-box;
+      white-space: pre-wrap;
+      overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+      text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+      -webkit-line-clamp: 2; // số dòng muốn hiển thị
+      -webkit-box-orient: vertical;
+    }
+    .description-tin-tuc {
+      width: 100%; // chiều rộng bằng khối bao nó
+      display: -webkit-box;
+      white-space: pre-wrap;
+      overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+      text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+      -webkit-line-clamp: 3; // số dòng muốn hiển thị
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+/** ------------------------ PRODUCT DETAIL (STALL) ------------------ */
+.stall-detail.product-detail {
+  .gallery-thumbs {
+    background: transparent !important;
+  }
+}
+.breadcrumbs-product {
+  background-color: transparent !important;
+  width: 100% !important;
+}
+.breadcrumb {
+  background-color: transparent;
+}
+.breadcrumb-item {
+  &::after {
+    display: none;
+  }
+}
+.product-overview {
+  .description-product {
+    img {
+      min-width: auto !important;
+      width: auto !important;
+    }
+  }
+}
+
+/** ------------------- PAYMENT ----------------------------------*/
+.wizardPayment {
+  .bs-stepper-header {
+    justify-content: center;
+    border: none;
+  }
+}
+
+/** --------------------- DETAIL SA SAM VIET 1 ----------------- */
+.detail-ssv-1 {
+  .custom-image {
+    > div {
+      height: 100%;
+      img {
+        width: auto;
+        min-width: auto !important;
+      }
+    }
+  }
+}
+
+/** -------------------------- NEWS CENTER  -------------------- */
+.news-item {
+  .text-description {
+    width: 100%; // chiều rộng bằng khối bao nó
+    white-space: pre-wrap;
+    overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+    text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+    -webkit-line-clamp: 5; // số dòng muốn hiển thị
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+}

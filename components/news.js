@@ -16,7 +16,7 @@ export default function News() {
     // scrollbar: { draggable: true },
     height: 200,
     slidesPerView: 2,
-    showsPagination: true,
+    // showsPagination: true,
     pagination: {
       clickable: true,
     },
