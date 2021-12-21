@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { Button } from "reactstrap";
 import ModalPromotion from "./ModalPromotion";
+import product1 from "../../../public/cart/product-1.jpg";
 
 const ShoppingCard = () => {
   const history = useRouter();
@@ -12,16 +13,14 @@ const ShoppingCard = () => {
       id: 1,
       quatity: 1,
       price: 180000,
-      image:
-        "https://product.hstatic.net/1000347556/product/fb3afdd74ae0b0bee9f1_1beb159112f3405da58149c3e53dd9d0_large.jpg",
+      image: product1,
       name: "BRONSAM (Sâm bổ phế)",
     },
     {
       id: 2,
       quatity: 1,
       price: 400000,
-      image:
-        "https://product.hstatic.net/1000347556/product/sasamviet_-_sulinsam_1eb7ed858b9d4f6a80e04b99b7579d7e_large.jpg",
+      image: product1,
       name: "SULISAM (Sâm đường huyết)",
     },
   ]);
@@ -80,16 +79,17 @@ const ShoppingCard = () => {
                 {listProduct.map((item, idx) => (
                   <tr key={item.id}>
                     <td className="d-flex align-items-center font-weight-bolder">
-                      <Image
-                        src={item.image}
-                        alt="images"
-                        style={{
-                          width: 120,
-                          height: 120,
-                          borderRadius: 4,
-                          marginRight: 10,
-                        }}
-                      />
+                      <div style={{ width: 100 }}>
+                        <Image
+                          src={item.image}
+                          alt="images"
+                          style={{
+                            borderRadius: 4,
+                            marginRight: 10,
+                          }}
+                        />
+                      </div>
+
                       <p className="text-dark text-hover-primary cursor-pointer mb-0 min-w-300px  ">
                         {item.name}
                       </p>

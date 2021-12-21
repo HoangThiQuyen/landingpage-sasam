@@ -23,13 +23,11 @@ const RecentProducts = ({ listNewProduct }) => {
           >
             <div className="d-flex mb-4">
               <div className="symbol symbol-50 symbol-2by3 flex-shrink-0 mr-4">
-                <div className="d-flex flex-column">
+                <div style={{ width: 100 }}>
                   <Image
                     src={item.image}
                     alt="images"
                     style={{
-                      width: 100,
-                      height: 100,
                       borderRadius: 5,
                       marginBottom: 15,
                     }}

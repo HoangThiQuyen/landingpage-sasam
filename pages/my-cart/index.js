@@ -4,21 +4,20 @@ import RecentProducts from "../../components/checkout/cart/RecentProducts";
 import ShoppingCard from "../../components/checkout/cart/ShoppingCard";
 import RelatedProducts from "../../components/checkout/cart/RelatedProducts";
 import { Col, Row } from "reactstrap";
+import product1 from "../../public/cart/product-1.jpg";
 
 const MyCart = () => {
   const listNewProduct = [
     {
       id: 1,
       name: "SARMENTOSA IMMUNE SUPPORT (75 ML) (BỔ PHẾ HÓA ĐỜM)",
-      image:
-        "https://product.hstatic.net/1000347556/product/f23ea8101f27e579bc36_595556e1b27a4a74986f7d90fff33c38_master.jpg",
+      image: product1,
       price: "220.000",
     },
     {
       id: 2,
       name: "LIVERSAM (SÂM GIẢI ĐỘC GAN)",
-      image:
-        "https://product.hstatic.net/1000347556/product/sasamviet_-_liversam_9d3fe83ec63b4cfb91513ab448ae604f_master.jpg",
+      image: product1,
       price: "558.000",
     },
   ];
