@@ -104,7 +104,8 @@ a {
 .css-mpnodf-TimelineTitleWrapper {
   width: 7% !important;
 }
-.css-1v979f3-TimelineMainWrapper{
+.css-1v979f3-TimelineMainWrapper,
+.horizontal.timeline-main-wrapper {
   left: 17% !important;
 }
 @media screen and (max-width: 992px) {
