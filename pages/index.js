@@ -24,6 +24,7 @@ import Image from "next/image";
 // css
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   const [showIcon, setShowIcon] = useState(false);
@@ -173,7 +174,11 @@ export default function Home() {
       {showIcon && (
         <div className={styles.hotLine}>
           <div className={styles.icon}>
-            <Image src={CartImg} alt="cart_icon" width={100} height={100} />
+            <Link href="https://shop.sasamviet.vn/my-cart">
+              <a>
+                <Image src={CartImg} alt="cart_icon" width={100} height={100} />
+              </a>
+            </Link>
           </div>
           <div className={styles.icon}>
             <Image src={PhoneImg} alt="phone_icon" width={100} height={100} />
