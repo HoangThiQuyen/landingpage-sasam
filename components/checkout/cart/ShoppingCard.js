@@ -79,7 +79,7 @@ const ShoppingCard = () => {
                 {listProduct.map((item, idx) => (
                   <tr key={item.id}>
                     <td className="d-flex align-items-center font-weight-bolder">
-                      <div style={{ width: 100 }}>
+                      <div style={{ width: 100 }} className="borderImg">
                         <Image
                           src={item.image}
                           alt="images"

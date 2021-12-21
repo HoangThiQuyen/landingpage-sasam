@@ -126,3 +126,6 @@ a {
 .css-5hfxmm.show-less.card-descriptio {
   max-height: 500px !important;
 }
+.borderImg span {
+  border-radius: 10px !important;
+}

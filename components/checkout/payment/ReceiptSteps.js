@@ -1,4 +1,5 @@
- 
+import Image from "next/image";
+import product1 from "../../../public/cart/product-1.jpg";
 
 const ReceiptSteps = () => {
   return (
@@ -42,16 +43,19 @@ const ReceiptSteps = () => {
               <tbody>
                 <tr className="font-weight-boldest">
                   <td className="border-0 pl-0 pt-7 d-flex align-items-center">
-                    <img
-                      src="https://product.hstatic.net/1000347556/product/sasamviet_-_liversam_9d3fe83ec63b4cfb91513ab448ae604f_large.jpg"
-                      alt="images"
-                      style={{
-                        width: 80,
-                        height: 80,
-                        borderRadius: 5,
-                        marginRight: 15,
-                      }}
-                    />
+                    <div
+                      style={{ width: 100, height: 100 }}
+                      className="borderImg"
+                    >
+                      <Image
+                        src={product1}
+                        alt="images"
+                        style={{
+                          borderRadius: 5,
+                          marginRight: 15,
+                        }}
+                      />
+                    </div>
 
                     <span style={{ width: "90%" }}>
                       LIVERSAM (Sâm giải độc gan)
@@ -65,16 +69,20 @@ const ReceiptSteps = () => {
                 </tr>
                 <tr className="font-weight-boldest border-bottom-0">
                   <td className="border-top-0 pl-0 py-4 d-flex align-items-center">
-                    <img
-                      src="https://product.hstatic.net/1000347556/product/f23ea8101f27e579bc36_595556e1b27a4a74986f7d90fff33c38_large.jpg"
-                      alt="images"
-                      style={{
-                        width: 80,
-                        height: 80,
-                        borderRadius: 5,
-                        marginRight: 15,
-                      }}
-                    />
+                    <div
+                      style={{ width: 100, height: 100 }}
+                      className="borderImg"
+                    >
+                      <Image
+                        src={product1}
+                        alt="images"
+                        style={{
+                          borderRadius: 5,
+                          marginRight: 15,
+                        }}
+                      />
+                    </div>
+
                     <span style={{ width: "90%" }}>
                       SARMENTOSA IMMUNE SUPPORT (75 ml) (Bổ phế hóa đờm)
                     </span>
