@@ -108,6 +108,7 @@ a {
 .horizontal.timeline-main-wrapper {
   left: 17% !important;
 }
+
 @media screen and (max-width: 992px) {
   .timeline-item-title {
     font-size: 15px !important;
@@ -120,4 +121,8 @@ a {
   .css-mpnodf-TimelineTitleWrapper {
     width: 15% !important;
   }
+}
+
+.css-5hfxmm.show-less.card-descriptio {
+  max-height: 500px !important;
 }
