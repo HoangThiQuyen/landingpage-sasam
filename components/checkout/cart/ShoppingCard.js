@@ -105,7 +105,8 @@ const ShoppingCard = () => {
                           }
                         }}
                       >
-                        <i className="fa fa-minus"></i>
+                        {/* <i className="fa fa-minus"></i> */}
+                        <span style={{ fontSize: 30 }}>-</span>
                       </p>
                       <span className="mr-2 font-weight-bolder ">
                         {item.quatity}
@@ -114,7 +115,8 @@ const ShoppingCard = () => {
                         className="btn btn-xs btn-light-success btn-icon mb-0"
                         onClick={() => updateQuantityProduct(idx, "increse")}
                       >
-                        <i className="fa fa-plus"></i>
+                        {/* <i className="fa fa-plus"></i> */}
+                        <span style={{ fontSize: 20 }}> + </span>
                       </p>
                     </td>
                     <td className="text-right align-middle  font-size-h5">
