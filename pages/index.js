@@ -125,6 +125,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Banner */}
       <Carousel />
