@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap"); */
 @media screen and (max-width: 992px) {
   .title {
     font-size: 30px !important;
@@ -9,12 +9,9 @@
 .title {
   text-align: center;
   font-size: 50px;
-  /* margin-bottom: 60px; */
   color: black;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
-  /* font-style: italic; */
-  /* background-color: red; */
   width: 50%;
   margin: 0 auto;
   margin-top: 150px;
