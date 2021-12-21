@@ -119,9 +119,10 @@ export default function Home() {
           content="Sâm trông trên cát biển duy nhất tại Việt Nam. Đề tài nghiên cứu đã được đăng trên tạp chí khoa học Quốc tế. Các hoạt chất quý hiếm thuộc nhóm hàng đầu thế giới trong cây Sa Sâm Việt"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
           rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
         />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
           rel="stylesheet"

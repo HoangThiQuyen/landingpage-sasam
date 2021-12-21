@@ -1,7 +1,7 @@
-@import '~swiper/swiper-bundle.css';
-@import '../../../base/plugins/extensions/ext-component-swiper.scss';
+@import "../../../../../node_modules/swiper/swiper-bundle.css";
+@import "../../../base/plugins/extensions/ext-component-swiper.scss";
 
-html[dir='rtl'] {
+html[dir="rtl"] {
   .swiper-container-cube .swiper-slide {
     transform-origin: 0 100% !important;
   }
