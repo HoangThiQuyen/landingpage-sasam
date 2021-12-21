@@ -74,7 +74,7 @@ const RelatedProducts = () => {
         */}
         <Row>
           {[...new Array(4)].map((ele, idx) => (
-            <Col md="4" key={idx}>
+            <Col md="3" key={idx}>
               <ProductItem />
             </Col>
           ))}

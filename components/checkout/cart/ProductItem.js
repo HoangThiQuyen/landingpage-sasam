@@ -17,7 +17,7 @@ const ProductItem = ({ item }) => {
       discount: { value: 20 },
       category_info: { name: "Chăm sóc da" },
       rating: { rating: 4.2 },
-      price: 350.0,
+      price: 350000,
       name: "Sâm SUMMARY",
       sold_info: {
         sold: 35,
@@ -30,16 +30,16 @@ const ProductItem = ({ item }) => {
   return (
     <Card
       className="ecommerce-card w-100"
-      onClick={() => router.push(`/home/gian-hang/${item.id}`)}
+      onClick={() => router.push(`/`)}
       style={{ cursor: "pointer" }}
     >
       <div className="item-img text-center p-5 mx-auto">
-        <div className="unset-img h-200px w-100">
+        <div className="unset-img h-100px w-70">
           <Image
-            className=" round  position-relative "
+            className=" round  "
             src={item.thumb_img_url || product1}
             objectFit="cover"
-            layout="fill"
+            // layout="fill"
             alt="not found"
             style={{ width: 50, height: 50 }}
           />
