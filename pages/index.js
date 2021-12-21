@@ -21,6 +21,10 @@ import CartImg from "../public/image/cart_icon.png";
 import PhoneImg from "../public/image/phone_icon.png";
 import MessageImg from "../public/image/message_icon.png";
 import Image from "next/image";
+import phoneGif from "../public/gift/phoneGift.gif";
+import messageGif from "../public/gift/messageGif.gif";
+import cartGif from "../public/gift/cartGif.gif";
+
 // css
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
@@ -175,23 +179,70 @@ export default function Home() {
       <Footer />
       {showIcon && (
         <div className={styles.hotLine}>
-          <div className={styles.icon}>
+          {/* <div className={styles.icon}>
             <Link href="/my-cart">
               <a>
-                <Image src={CartImg} alt="cart_icon" width={100} height={100} />
+                <Image src={cartGif} alt="cart_icon" width={100} height={100} />
               </a>
             </Link>
+          </div> */}
+          <div className={styles.icon}>
+            <div
+              style={{
+                boxShadow:
+                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                width: 60,
+                height: 60,
+                borderRadius: "50%",
+              }}
+            >
+              <Link href="/my-cart">
+                <a>
+                  <Image
+                    src={cartGif}
+                    alt="phone_icon"
+                    className="rounded-circle"
+                  />
+                </a>
+              </Link>
+            </div>
           </div>
           <div className={styles.icon}>
-            <Image src={PhoneImg} alt="phone_icon" width={100} height={100} />
+            <div
+              style={{
+                boxShadow:
+                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                width: 60,
+                height: 60,
+                borderRadius: "50%",
+                marginLeft: 20,
+              }}
+            >
+              <Image
+                src={phoneGif}
+                alt="phone_icon"
+                className="rounded-circle"
+              />
+            </div>
           </div>
+
           <div className={styles.icon}>
-            <Image
-              src={MessageImg}
-              alt="message_icon"
-              width={100}
-              height={100}
-            />
+            <div
+              style={{
+                boxShadow:
+                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                width: 60,
+                height: 60,
+                borderRadius: "50%",
+                marginLeft: 20,
+              }}
+            >
+              <Image
+                src={messageGif}
+                alt="phone_icon"
+                className="rounded-circle"
+              />
+            </div>
           </div>
         </div>
       )}
