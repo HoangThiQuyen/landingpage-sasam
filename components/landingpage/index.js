@@ -1,0 +1,17 @@
+export { default as Achievement } from "./achievement";
+export { default as Carousel } from "./carousel";
+export { default as Certification } from "./certification";
+export { default as Chat } from "./chat";
+export { default as ComunityActivity } from "./comunity-activity";
+export { default as Effect } from "./effect";
+export { default as Footer } from "./footer";
+export { default as InfoProduct } from "./info-product";
+export { default as Ingredient } from "./ingredient";
+export { default as News } from "./news";
+export { default as Promotion } from "./promotion";
+export { default as Rating } from "./rating";
+export { default as ScientificResearch } from "./scientific-research";
+export { default as Stories } from "./stories";
+export { default as UserManual } from "./user-manual";
+export { default as UserObject } from "./user-object";
+export { default as Uses } from "./uses";

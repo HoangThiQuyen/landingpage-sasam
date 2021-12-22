@@ -131,3 +131,16 @@
     display: -webkit-box;
   }
 }
+.modal.modal-sticky.modal-sticky-bottom-right{
+  right: 90px !important;
+}
+
+.modal.modal-sticky.modal-sticky-bottom-right .modal-dialog{
+margin-right:0px !important;
+}
+
+@media screen and (max-width:768px) {
+  .modal.modal-sticky.modal-sticky-bottom-right{
+    right: 0px !important;
+  }
+}

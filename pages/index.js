@@ -1,34 +1,36 @@
-import Carousel from "../components/carousel";
-import Promotion from "../components/promotion";
-import IntroProduct from "../components/intro-product";
-import Uses from "../components/uses";
-import Ingredient from "../components/Ingredient";
-import Effect from "../components/effect";
-import UserManual from "../components/UserManual";
-import UserObject from "../components/UserObject";
-import Rating from "../components/Rating";
-import Stories from "../components/stories";
 import { useEffect, useState } from "react";
-
-import News from "../components/news";
-import Achievement from "../components/achievement";
-import ScientificResearch from "../components/ScientificResearch";
-import ComunityActivity from "../components/ComunityActivity";
-import Footer from "../components/footer";
-import Certification from "../components/certification";
-// Images
-import CartImg from "../public/image/cart_icon.png";
-import PhoneImg from "../public/image/phone_icon.png";
-import MessageImg from "../public/image/message_icon.png";
 import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
+
+// components
+import {
+  Carousel,
+  Promotion,
+  InfoProduct,
+  Uses,
+  Ingredient,
+  Effect,
+  UserManual,
+  UserObject,
+  Rating,
+  Stories,
+  Chat,
+  News,
+  Achievement,
+  ScientificResearch,
+  ComunityActivity,
+  Footer,
+  Certification,
+} from "../components/landingpage";
+
+// Images
 import phoneGif from "../public/gift/phoneGift.gif";
 import messageGif from "../public/gift/messageGif.gif";
 import cartGif from "../public/gift/cartGif.gif";
 
 // css
 import styles from "../styles/Home.module.css";
-import Head from "next/head";
-import Link from "next/link";
 
 export default function Home() {
   const [showIcon, setShowIcon] = useState(false);
@@ -42,6 +44,9 @@ export default function Home() {
       }
     });
   }, []);
+
+  // useState
+  const [showChat, setShowChat] = useState(false);
   return (
     <div>
       <Head>
@@ -137,7 +142,7 @@ export default function Home() {
       <Carousel />
 
       {/* Giới thiệu sản phẩm */}
-      <IntroProduct />
+      <InfoProduct />
 
       {/* Thành phần */}
       <Ingredient />
@@ -186,6 +191,43 @@ export default function Home() {
               </a>
             </Link>
           </div> */}
+          <div
+            className={` ${styles.iconPhone} ${styles.icon} d-flex align-items-center `}
+          >
+            <div
+              style={{
+                fontWeight: "bold",
+                fontSize: "20px",
+                color: "#383b6d",
+                border: "1px solid red",
+                backgroundColor: "#fff",
+                borderRadius: "10px",
+              }}
+              className={`${styles.phone} p-3`}
+            >
+              0889 78 78 78
+            </div>
+            <div
+              style={{
+                boxShadow:
+                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                width: 60,
+                height: 60,
+                borderRadius: "50%",
+                marginRight: 20,
+              }}
+            >
+              <Link href="tel:0889787878">
+                <a>
+                  <Image
+                    src={phoneGif}
+                    alt="phone_icon"
+                    className="rounded-circle"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
           <div className={styles.icon}>
             <div
               style={{
@@ -207,24 +249,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className={styles.icon}>
-            <div
-              style={{
-                boxShadow:
-                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                width: 60,
-                height: 60,
-                borderRadius: "50%",
-                marginLeft: 20,
-              }}
-            >
-              <Image
-                src={phoneGif}
-                alt="phone_icon"
-                className="rounded-circle"
-              />
-            </div>
-          </div>
 
           <div className={styles.icon}>
             <div
@@ -236,6 +260,9 @@ export default function Home() {
                 borderRadius: "50%",
                 marginLeft: 20,
               }}
+              data-toggle="modal"
+              data-target="#kt_chat_modal"
+              onClick={() => setShowChat(!showChat)}
             >
               <Image
                 src={messageGif}
@@ -246,6 +273,7 @@ export default function Home() {
           </div>
         </div>
       )}
+      <Chat setShowChat={setShowChat} showChat={showChat} />
     </div>
   );
 }

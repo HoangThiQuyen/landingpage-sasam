@@ -21,7 +21,7 @@ const SubHeader = () => {
             <span> Thanh toán </span>
           </BreadcrumbItem>
         </Breadcrumb>
-        {/*end::Info*/};
+        {/*end::Info*/}
       </div>
     </div>
   );
