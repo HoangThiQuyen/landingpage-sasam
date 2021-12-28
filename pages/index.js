@@ -28,25 +28,33 @@ import {
 import phoneGif from "../public/gift/phoneGift.gif";
 import messageGif from "../public/gift/messageGif.gif";
 import cartGif from "../public/gift/cartGif.gif";
+import logo from "../public/image/logo-bgnone.png";
 
 // css
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  // UseState
   const [showIcon, setShowIcon] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
+  const [showChat, setShowChat] = useState(false);
+
+  // UseEffect
   useEffect(() => {
     window.addEventListener("scroll", function () {
-      if (window.pageYOffset > 500) {
+      if (window.pageYOffset > 400) {
         setShowIcon(true);
-      }
-      if (window.pageYOffset < 500) {
+      } else {
         setShowIcon(false);
+      }
+      if (window.pageYOffset > 200) {
+        setShowLogo(true);
+      } else {
+        setShowLogo(false);
       }
     });
   }, []);
 
-  // useState
-  const [showChat, setShowChat] = useState(false);
   return (
     <div>
       <Head>
@@ -60,7 +68,6 @@ export default function Home() {
           name="carousel"
           content="Doanh nghiệp đầu tiên tại Việt Nam và trên Thế giới trồng sâm trên cát biển. Nghiên cứu được đăng trên tạp chí khoa học Thế giới"
         />
-
         {/* Thông tin sản phẩm */}
         <meta
           property="og:title"
@@ -86,7 +93,6 @@ export default function Home() {
           name="congdung"
           content="(Dứt điểm ho gió, ho khan, ho có đờm)( Xịt họng, kháng khuẩn) (Giảm viêm, ngăn ngừa virut) (Bổ phế, hóa đờm)"
         />
-
         {/*  Cơ chế tác dụng */}
         <meta property="og:title" content="Cơ chế tác dụng" />
         <meta
@@ -99,35 +105,30 @@ export default function Home() {
           name="doituongsudung"
           content="Người lớn và trẻ em trên 1 tuổi bị đau họng"
         />
-
         {/* Câu chuyện khát vọng */}
         <meta property="og:title" content="Câu chuyện khát vọng" />
         <meta
           name="doituongsudung"
           content="Mang lại sản phẩm tốt nhất đến với người dùng."
         />
-
         {/* Thành tựu nổi bật */}
         <meta property="og:title" content="Thành tựu nổi bật" />
         <meta
           name="achievement"
           content='(Chứng nhận đạt tiêu chuẩn HACCP)(Chứng nhận đạt tiêu chuẩn ISO)(Chứng nhận cơ sở đủ điều kiện an toàn thực phẩm)(Chứng nhận doanh nghiệp khoa học và công nghệ)(Đạt giải nhì cuộc thi "Dự án khởi nghiệp Quốc gia 2018" tổ chức tại Đà Nẵng)'
         />
-
         {/*  Tin tức nổi bật */}
         <meta property="og:title" content="Tin tức" />
         <meta
           name="news"
           content="Phát hiện nhiều hợp chất quý giá trong sasam Việt Nam"
         />
-
         {/* Nghiên cứu khoa học */}
         <meta property="og:title" content="Nghiên cứu khoa học" />
         <meta
           name="nghiencuukhoahoc"
           content="Sâm trông trên cát biển duy nhất tại Việt Nam. Đề tài nghiên cứu đã được đăng trên tạp chí khoa học Quốc tế. Các hoạt chất quý hiếm thuộc nhóm hàng đầu thế giới trong cây Sa Sâm Việt"
         />
-
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
@@ -138,142 +139,160 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
         />
       </Head>
-      {/* Banner */}
-      <Carousel />
+      <div>
+        {/* Logo SaSam */}
+        {showLogo && (
+          <div
+            style={{
+              position: "fixed",
+              top: 15,
+              left: 5,
+              zIndex: 99999999,
+              width: 100,
+              cursor: "pointer",
+            }}
+          >
+            <Image src={logo} alt="logo-sasam" className="img-fluid" />
+          </div>
+        )}
 
-      {/* Giới thiệu sản phẩm */}
-      <InfoProduct />
+        {/* Banner */}
+        <Carousel />
 
-      {/* Thành phần */}
-      <Ingredient />
+        {/* Giới thiệu sản phẩm */}
+        <InfoProduct />
 
-      {/* Khuyến mãi */}
-      <Promotion />
+        {/* Thành phần */}
+        <Ingredient />
 
-      {/* Công dụng */}
-      <Uses />
+        {/* Khuyến mãi */}
+        <Promotion />
 
-      {/* Cơ chế tác động  */}
-      <Effect />
+        {/* Công dụng */}
+        <Uses />
 
-      {/* Hướng dẫn sử dụng */}
-      <UserManual />
+        {/* Cơ chế tác động  */}
+        <Effect />
 
-      {/* Đối tượng sử dụng */}
-      <UserObject />
+        {/* Hướng dẫn sử dụng */}
+        <UserManual />
 
-      {/* Người dùng đánh giá */}
-      <Rating />
+        {/* Đối tượng sử dụng */}
+        <UserObject />
 
-      {/* Câu chuyện khát vọng */}
-      <Stories />
-      {/*  Chứng nhận */}
-      <Certification />
+        {/* Người dùng đánh giá */}
+        <Rating />
 
-      {/* Thành tựu nổi bật */}
-      <Achievement />
-      {/* Hoạt động cộng đồng */}
-      <ComunityActivity />
-      {/* Tin tức nổi bật */}
-      <News />
+        {/* Câu chuyện khát vọng */}
+        <Stories />
+        {/*  Chứng nhận */}
+        <Certification />
 
-      {/* Nghiên cứu khoa học  */}
-      <ScientificResearch />
+        {/* Thành tựu nổi bật */}
+        <Achievement />
+        {/* Hoạt động cộng đồng */}
+        <ComunityActivity />
+        {/* Tin tức nổi bật */}
+        <News />
 
-      {/* Footer */}
-      <Footer />
-      {showIcon && (
-        <div className={styles.hotLine}>
-          {/* <div className={styles.icon}>
+        {/* Nghiên cứu khoa học  */}
+        <ScientificResearch />
+
+        {/* Footer */}
+        <Footer />
+        {showIcon && (
+          <div className={styles.hotLine}>
+            {/* <div className={styles.icon}>
             <Link href="/my-cart">
               <a>
                 <Image src={cartGif} alt="cart_icon" width={100} height={100} />
               </a>
             </Link>
           </div> */}
-          <div
-            className={` ${styles.iconPhone} ${styles.icon} d-flex align-items-center `}
-          >
             <div
-              style={{
-                fontWeight: "bold",
-                fontSize: "20px",
-                color: "#383b6d",
-                border: "1px solid red",
-                backgroundColor: "#fff",
-                borderRadius: "10px",
-              }}
-              className={`${styles.phone} p-3`}
+              className={` ${styles.iconPhone} ${styles.icon} d-flex align-items-center `}
             >
-              0889 78 78 78
+              <div
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                  color: "#383b6d",
+                  border: "1px solid red",
+                  backgroundColor: "#fff",
+                  borderRadius: "10px",
+                }}
+                className={`${styles.phone} p-3`}
+              >
+                0889 78 78 78
+              </div>
+              <div
+                style={{
+                  boxShadow:
+                    " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                  width: 60,
+                  height: 60,
+                  borderRadius: "50%",
+                  marginRight: 20,
+                }}
+              >
+                <Link href="tel:0889787878">
+                  <a>
+                    <Image
+                      src={phoneGif}
+                      alt="phone_icon"
+                      className="rounded-circle"
+                    />
+                  </a>
+                </Link>
+              </div>
             </div>
-            <div
-              style={{
-                boxShadow:
-                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                width: 60,
-                height: 60,
-                borderRadius: "50%",
-                marginRight: 20,
-              }}
-            >
-              <Link href="tel:0889787878">
-                <a>
-                  <Image
-                    src={phoneGif}
-                    alt="phone_icon"
-                    className="rounded-circle"
-                  />
-                </a>
-              </Link>
+            <div className={styles.icon}>
+              <div
+                style={{
+                  boxShadow:
+                    " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                  width: 60,
+                  height: 60,
+                  borderRadius: "50%",
+                }}
+              >
+                <Link href="/my-cart">
+                  <a>
+                    <Image
+                      src={cartGif}
+                      alt="phone_icon"
+                      className="rounded-circle"
+                    />
+                  </a>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className={styles.icon}>
-            <div
-              style={{
-                boxShadow:
-                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                width: 60,
-                height: 60,
-                borderRadius: "50%",
-              }}
-            >
-              <Link href="/my-cart">
-                <a>
-                  <Image
-                    src={cartGif}
-                    alt="phone_icon"
-                    className="rounded-circle"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
 
-          <div className={styles.icon}>
-            <div
-              style={{
-                boxShadow:
-                  " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                width: 60,
-                height: 60,
-                borderRadius: "50%",
-                marginLeft: 20,
-              }}
-              data-toggle="modal"
-              data-target="#kt_chat_modal"
-              onClick={() => setShowChat(!showChat)}
-            >
-              <Image
-                src={messageGif}
-                alt="phone_icon"
-                className="rounded-circle"
-              />
+            <div className={styles.icon}>
+              <div
+                style={{
+                  boxShadow:
+                    " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                  width: 60,
+                  height: 60,
+                  borderRadius: "50%",
+                  marginLeft: 20,
+                }}
+                data-toggle="modal"
+                data-target="#kt_chat_modal"
+                onClick={() => setShowChat(!showChat)}
+              >
+                <Image
+                  src={messageGif}
+                  alt="phone_icon"
+                  className="rounded-circle"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      )}
-      <Chat setShowChat={setShowChat} showChat={showChat} />
+        )}
+        <Chat setShowChat={setShowChat} showChat={showChat} />
+      </div>
     </div>
   );
 }
