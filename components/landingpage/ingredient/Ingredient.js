@@ -51,7 +51,7 @@ export default function Ingredient() {
 
       <div className=" pb-5">
         <h1 className={`text-center ${styles.title} mt-5`}>Thành phần</h1>
-        <div className={`row  ${styles.content} justify-content-center`}>
+        <div className={`row  ${styles.content} justify-content-center mx-0`}>
           <div className="col-md-6 col-lg-3">
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
