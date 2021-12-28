@@ -72,6 +72,44 @@
 }
 
 /* reponsive */
+
+@media screen and (min-width: 1500px) and (max-width: 1950px) {
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+    /* transform: skewY(10deg); */
+    height: 1080px;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Ephesis";
+    font-size: 85px;
+  }
+  .logo {
+    /* transform: skewY(-20deg); */
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 170px;
+    height: 170px;
+  }
+}
 @media screen and (min-width: 1350px) and (max-width: 1500px) {
   .background {
     background: linear-gradient(
@@ -203,10 +241,10 @@
     bottom: 0;
     left: 0;
     top: 0;
-    width: 98.9vw;
+    width: 100vw;
     z-index: -1;
     /* transform: skewY(8deg); */
-    height: 570px;
+    height: 590px;
   }
   .logo {
     /* transform: skewY(-10deg); */
@@ -216,7 +254,7 @@
   }
   .content {
     position: absolute;
-    top: 25%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
