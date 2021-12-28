@@ -67,7 +67,7 @@ export default function InfoProduct() {
               Giảm giá lên đến <span className={styles.discount}>20%</span>
             </p>
           </div>
-          <div className="text-center wow fadeInUp" data-wow-delay="1.4s">
+          <div className="text-center wow fadeInUp" data-wow-delay="1.1s">
             <Link href="/my-cart">
               <a className={`btn ${styles.btn}`}>Mua ngay</a>
             </Link>

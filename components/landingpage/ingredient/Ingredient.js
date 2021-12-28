@@ -24,9 +24,10 @@ const isServer = typeof window === "undefined";
 const WOW = !isServer ? require("wowjs") : null;
 const images = [
   "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666257/My%20Images/4_ug67mz.png",
-  "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666257/My%20Images/1_rgdbrb.png",
-  "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666505/My%20Images/5_kmh6mu.png",
   "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666257/My%20Images/3_rn4z4e.png",
+  "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666505/My%20Images/5_kmh6mu.png",
+
+  "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666257/My%20Images/1_rgdbrb.png",
   "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666504/My%20Images/6_ajzlp1.png",
   "https://res.cloudinary.com/du7hfrsyf/image/upload/v1640666257/My%20Images/2_zexvjh.png",
 ];
