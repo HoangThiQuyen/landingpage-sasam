@@ -2,8 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-
-
 }
 
 a {
@@ -130,4 +128,13 @@ a {
 }
 .borderImg span {
   border-radius: 10px !important;
+}
+
+input[type="radio"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5) !important; /* IE */
+  -moz-transform: scale(1.5) !important; /* FF */
+  -webkit-transform: scale(1.5) !important; /* Safari and Chrome */
+  -o-transform: scale(1.5) !important; /* Opera */
+  padding: 10px !important;
 }
