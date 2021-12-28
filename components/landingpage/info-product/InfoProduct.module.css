@@ -5,33 +5,13 @@
   margin-top: 150px;
 }
 .imageProduct1 {
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 60px;
+  border-radius: 30px;
   border: 2px solid #0297d0 !important;
-  padding: 3px !important;
 }
-.imageProduct2 {
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 60px;
-  border: 2px solid #0297d0 !important;
-  padding: 3px !important;
+.imageProduct1 img{
+  border-radius: 30px;
 }
-.imageProduct3 {
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 60px;
-  border: 2px solid #0297d0 !important;
-  padding: 3px !important;
-}
-.imageProduct4 {
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-top-left-radius: 60px;
-  border: 2px solid #0297d0 !important;
-  padding: 3px !important;
-}
+
 .iconLogo {
   position: absolute;
   top: 52%;
@@ -55,6 +35,50 @@
 .btn:hover {
   color: #fff;
   background-image: linear-gradient(to left, #11af2b, #6ba31c);
+}
+
+.infoText{
+  font-size: 17px;
+  line-height:35px;
+}
+
+.saleProduct{
+  border: 2px dashed #1eac52;
+  border-radius: 7px;
+  text-align: center;
+  padding:10px;
+  margin:15px 0;
+
+}
+.saleProduct .saleInfo{
+  font-family: "Nunito";
+    margin-bottom:0px;
+    font-size:20px;
+    font-weight: bold;
+  
+}
+.saleProduct .discount{
+  font-family: "Ephesis";
+    font-size:30px;
+    font-weight: bold;
+    color:#1eac52
+  
+}
+
+.listedPrice{
+  font-family: "Nunito";
+  margin-bottom:0px;
+  margin:0 7px;
+  font-size: 22px;
+  color: gray;font-weight: bolder;
+  text-decoration: line-through;
+}
+
+.promotionalPrice{
+  font-family: "Nunito";
+  margin-bottom:0px;
+  font-size: 30px;
+  color: #1eac52;font-weight: bolder;
 }
 
 /* reponsive */
