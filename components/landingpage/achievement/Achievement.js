@@ -80,7 +80,7 @@ export default function Achievement() {
     <div>
       <h2 className={styles.title}>Thành tựu nổi bật</h2>
       <div className="container-md">
-        <div className="d-none d-md-block">
+        <div className="d-none d-lg-block">
           <Chrono
             items={items}
             // mode="VERTICAL"
@@ -89,7 +89,7 @@ export default function Achievement() {
             scrollable={true}
           />
         </div>
-        <div className="d-block d-md-none">
+        <div className="d-block d-lg-none">
           <div className="row">
             {items.map((ele, idx) => (
               <div className="col-md-6" key={idx}>

@@ -15,7 +15,7 @@ export default function UserManual() {
       <div className="container">
         <h1 className={styles.title}>Hướng dẫn sử dụng</h1>
         <div className="row">
-          <div className="col-lg-6 ">
+          <div className="col-lg-6 text-center ">
             <Image src={userManual} alt="userManual" />
           </div>
           <div className="col-lg-6">

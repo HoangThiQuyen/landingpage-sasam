@@ -35,11 +35,11 @@ export default function News() {
         spaceBetween: 30,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 30,
       },
       640: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       320: {
@@ -74,7 +74,7 @@ export default function News() {
       <h2 className={styles.title}>Tin tức nổi bật</h2>
       <div className="container">
         <div className="row  align-items-center">
-          <div className="col-md-6 mb-5 mb-lg-0">
+          <div className="col-xl-6 order-2 ">
             <Swiper {...params} className="mySwiper">
               {data.map((ele) => (
                 <SwiperSlide key={ele.id} className={styles.newItem}>
@@ -97,7 +97,7 @@ export default function News() {
               ))}
             </Swiper>
           </div>
-          <div className="col-md-6">
+          <div id="news" className=" col-xl-6 order-1 mb-10 mb-xl-0">
             <div className={styles.news}>
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=via1I_OTnIU&ab_channel=SaS%C3%A2mVi%E1%BB%87t"

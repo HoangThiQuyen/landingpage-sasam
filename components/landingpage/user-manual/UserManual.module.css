@@ -1,4 +1,4 @@
-.userManual{
+.userManual {
   margin-top: 150px;
   font-family: "Nunito", sans-serif;
 }
@@ -22,20 +22,21 @@
   margin: 0 auto;
   margin-top: 10px;
 }
-.manualItem{
+.manualItem {
   margin-left: 30px;
-  width: 70%;
-  font-size: 18px;;
+  width: 80%;
+  font-size: 18px;
 }
-.Item{
-  height:33.33%
+.Item {
+  height: 33.33%;
 }
-.manualItem h4{
+.manualItem h4 {
   font-weight: bold;
+  color: black;
 }
 
 /* reponsive */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .title {
     text-align: center;
     font-size: 30px;
@@ -45,5 +46,17 @@
     width: 50%;
     margin: 0 auto;
     margin-bottom: 70px;
+  }
+  .manualItem {
+    margin: 0px auto;
+    width: 98%;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  .manualItem {
+    margin-left: 30px;
+    width: 100%;
+    font-size: 15px;
   }
 }

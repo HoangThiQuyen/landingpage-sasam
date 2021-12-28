@@ -122,6 +122,12 @@ a {
     width: 15% !important;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .css-1v979f3-TimelineMainWrapper,
+  .horizontal.timeline-main-wrapper {
+    left: 0% !important;
+  }
+}
 
 .css-5hfxmm.show-less.card-descriptio {
   max-height: 500px !important;
@@ -137,4 +143,11 @@ input[type="radio"] {
   -webkit-transform: scale(1.5) !important; /* Safari and Chrome */
   -o-transform: scale(1.5) !important; /* Opera */
   padding: 10px !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .react-player-video.rounded {
+    height: 450px !important;
+    width: 100% !important;
+  }
 }
