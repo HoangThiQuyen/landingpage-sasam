@@ -165,9 +165,6 @@ export default function Home() {
         {/* Thành phần */}
         <Ingredient />
 
-        {/* Khuyến mãi */}
-        <Promotion />
-
         {/* Công dụng */}
         <Uses />
 
@@ -179,6 +176,9 @@ export default function Home() {
 
         {/* Đối tượng sử dụng */}
         <UserObject />
+
+        {/* Khuyến mãi */}
+        <Promotion />
 
         {/* Người dùng đánh giá */}
         <Rating />
