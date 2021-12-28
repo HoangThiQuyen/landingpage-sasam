@@ -84,41 +84,205 @@
 .ingreLeft1{
   position: absolute;
   top: -5%;left: 3%;
-  
+  width: 150px;height: 150px;
   cursor: pointer;
 }
 .ingreLeft2{
   position: absolute;
   top: 33%;left: -12%;
   cursor: pointer;
+  width: 150px;height: 150px;
 }
 .ingreLeft3{
   position: absolute;
   bottom: -5%;left: 3%;
   cursor: pointer;
+  width: 150px;height: 150px;
 }
 
 
 .ingreRight1{
   position: absolute;
   top: -5%;right: 3%;
- 
+  width: 150px;height: 150px;
   cursor: pointer;
 }
 .ingreRight2{
   position: absolute;
   top: 33%;right: -12%;
   cursor: pointer;
+  width: 150px;height: 150px;
 }
 .ingreRight3{
   position: absolute;
   bottom: -5%;right: 3%;
   cursor: pointer;
+  width: 150px;height: 150px;
 }
 .product{
   position: absolute;
   top: 50%;left: 50%;
   transform:translate(-50%, -50%);
+  width: 100px; height: 200px;
+}
+
+
+/* reponsive */
+
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+  .ingredientItem {
+    height: 33.33% !important;
+  }
+  
+  .ingredientImage{
+    position: relative;
+    margin:50px;
+  }
+  
+  
+  .ingreLeft1{
+    position: absolute;
+    top: -5%;left: 3%;
+    width: 120px;height: 120px;
+    cursor: pointer;
+  }
+  .ingreLeft1 img{
+    width: 120px;
+  }
+  .ingreLeft2{
+    position: absolute;
+    top: 33%;left: -12%;
+    cursor: pointer;
+    width: 120px;height: 120px;
+  }
+  .ingreLeft3{
+    position: absolute;
+    bottom: -5%;left: 3%;
+    cursor: pointer;
+    width: 120px;height: 120px;
+  }
+  
+  
+  .ingreRight1{
+    position: absolute;
+    top: -5%;right: 3%;
+    width: 120px;height: 120px;
+    cursor: pointer;
+  }
+  .ingreRight2{
+    position: absolute;
+    top: 33%;right: -12%;
+    cursor: pointer;
+    width: 120px;height: 120px;
+  }
+  .ingreRight3{
+    position: absolute;
+    bottom: -5%;right: 3%;
+    cursor: pointer;
+    width: 120px;height: 120px;
+  }
+  .product{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform:translate(-50%, -50%);
+    width: 60px;height: 120px;
+  }
+  
+  .leafIcon {
+    height: 90px;
+    width: 90px;
+  }
+  .leafIcon1 {
+    width: 90px;
+    height: 90px;
+    bottom: 0%;
+  }
+  .content p {
+    font-family: "Ephesis";
+    font-size: 27px;
+    color: #383b6d;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .ingredientItem {
+    height: 33.33% !important;
+  }
+  
+  .ingredientImage{
+    position: relative;
+    margin:30px;
+  }
+  
+  
+  .ingreLeft1{
+    position: absolute;
+    top: -5%;left: 3%;
+    width: 100px;height: 100px;
+    cursor: pointer;
+  }
+  .ingreLeft1 img{
+    width: 100px;
+  }
+  .ingreLeft2{
+    position: absolute;
+    top: 33%;left: -12%;
+    cursor: pointer;
+    width: 100px;height: 100px;
+  }
+  .ingreLeft3{
+    position: absolute;
+    bottom: -5%;left: 3%;
+    cursor: pointer;
+    width: 100px;height: 100px;
+  }
+  
+  
+  .ingreRight1{
+    position: absolute;
+    top: -5%;right: 3%;
+    width: 100px;height: 100px;
+    cursor: pointer;
+  }
+  .ingreRight2{
+    position: absolute;
+    top: 33%;right: -12%;
+    cursor: pointer;
+    width: 100px;height: 100px;
+  }
+  .ingreRight3{
+    position: absolute;
+    bottom: -5%;right: 3%;
+    cursor: pointer;
+    width: 100px;height: 100px;
+  }
+  .product{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform:translate(-50%, -50%);
+    width: 50px;height: 100px;
+  }
+  
+  .leafIcon {
+    height: 80px;
+    width: 80px;
+  }
+  .leafIcon1 {
+    width: 80px;
+    height: 80px;
+    bottom: 0%;
+  }
+  .content p {
+    font-family: "Ephesis";
+    font-size: 23px;
+    color: #383b6d;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+
 }
 
 @media screen and (max-width: 992px) {

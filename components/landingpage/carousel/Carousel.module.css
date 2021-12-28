@@ -70,10 +70,38 @@
   left: 51%;
   overflow: hidden;
 }
+.iconHand {
+  position: absolute;
+  right: 8%;
+  bottom: -32%;
+  animation-name: icon;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  width: 150px;
+}
+
+@keyframes icon {
+  0% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* reponsive */
 
-@media screen and (min-width: 1500px) and (max-width: 1950px) {
+@media screen and (min-width: 1800px) and (max-width: 1950px) {
   .background {
     background: linear-gradient(
       to right,
@@ -110,7 +138,44 @@
     height: 170px;
   }
 }
-@media screen and (min-width: 1350px) and (max-width: 1500px) {
+@media screen and (min-width: 1550px) and (max-width: 1800px) {
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+    /* transform: skewY(10deg); */
+    height: 900px;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Ephesis";
+    font-size: 85px;
+  }
+  .logo {
+    /* transform: skewY(-20deg); */
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 170px;
+    height: 170px;
+  }
+}
+@media screen and (min-width: 1350px) and (max-width: 1550px) {
   .background {
     background: linear-gradient(
       to right,
@@ -128,7 +193,7 @@
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(10deg); */
-    height: 800px;
+    height: 850px;
   }
   .content {
     position: absolute;
@@ -222,7 +287,7 @@
     animation-name: icon;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    width: 130px;
+    width: 120px;
   }
 }
 
@@ -241,7 +306,7 @@
     bottom: 0;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 98.9vw;
     z-index: -1;
     /* transform: skewY(8deg); */
     height: 590px;
@@ -261,6 +326,15 @@
     font-family: "Ephesis";
     font-size: 55px !important;
     z-index: 9;
+  }
+  .iconHand {
+    position: absolute;
+    right: 8%;
+    bottom: -10%;
+    animation-name: icon;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    width: 100px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -334,8 +408,7 @@
     display: none;
   }
 }
-
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 650px) and (max-width: 768px) {
   .content {
     position: absolute;
     color: #fff;
@@ -382,7 +455,80 @@
     width: 98.9vw;
     z-index: -1;
     /* transform: skewY(8deg); */
-    height: 430px;
+    height: 420px;
+  }
+  .video {
+    width: 100vw;
+    transform: skewY(12deg);
+  }
+  .bgvideo {
+    position: relative;
+    transform: skewY(-12deg);
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    transform: skewY(12deg);
+    width: 102vw;
+  }
+  .iconHand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 650px) {
+  .content {
+    position: absolute;
+    color: #fff;
+    font-family: "Ephesis";
+    font-size: 40px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bgLine {
+    position: absolute;
+    bottom: -0.5%;
+    transform: skewY(12deg);
+  }
+  .bgLine1 {
+    position: absolute;
+    top: -1.5%;
+  }
+  .bgLine2 {
+    position: absolute;
+    bottom: -1.5%;
+  }
+  .logo {
+    /* transform: skewY(-8deg); */
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+  }
+  .background {
+    background: linear-gradient(
+      to right,
+      #f6efcb,
+      #e4d8a4,
+      #d4c3b3,
+      #0297d0,
+      #2b4b8e
+    );
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 98.9vw;
+    z-index: -1;
+    /* transform: skewY(8deg); */
+    height: 400px;
   }
   .video {
     width: 100vw;
@@ -553,30 +699,4 @@
   }
 }
 
-.iconHand {
-  position: absolute;
-  right: 8%;
-  bottom: -32%;
-  animation-name: icon;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-}
 
-@keyframes icon {
-  0% {
-    transform: translateX(0px);
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-50px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
