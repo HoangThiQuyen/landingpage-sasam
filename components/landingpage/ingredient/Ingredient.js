@@ -11,12 +11,12 @@ import ingredientImage from "../../../public/image/ingredient.png";
 import ingredientLine from "../../../public/image/ingredient_line_top.png";
 import leaf from "../../../public/image/leaf.png";
 import leaf1 from "../../../public/image/leaf1.png";
-import ingreLeft1 from "../../../public/image/ingreLeft1.png";
-import ingreLeft2 from "../../../public/image/ingreRight1.png";
-import ingreLeft3 from "../../../public/image/ingreLeft3.png";
-import ingreRight1 from "../../../public/image/ingreLeft2.png";
-import ingreRight2 from "../../../public/image/ingreRight2.png";
-import ingreRight3 from "../../../public/image/ingreRight3.png";
+import ingreLeft1 from "../../../public/image/IngreLeft1.png";
+import ingreLeft2 from "../../../public/image/IngreRight1.png";
+import ingreLeft3 from "../../../public/image/IngreLeft3.png";
+import ingreRight1 from "../../../public/image/IngreLeft2.png";
+import ingreRight2 from "../../../public/image/IngreRight2.png";
+import ingreRight3 from "../../../public/image/IngreRight3.png";
 import product from "../../../public/image/product.png";
 
 // wow
