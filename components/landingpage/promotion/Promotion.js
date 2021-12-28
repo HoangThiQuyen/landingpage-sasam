@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 //image
 import newImg from "../../../public/image/new.jpg";
 import promotion1 from "../../../public/image/promotion1.png";
+import promotion2 from "../../../public/image/promotion2.png";
 
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -61,7 +62,7 @@ export default function Promotion() {
       id: 2,
       title: "Ưu đãi MASTERCARD lên đến 3 triệu đồng",
       content: "Chương trình diễn ra đến 29/12/2021",
-      img: promotion1,
+      img: promotion2,
     },
     {
       id: 3,
