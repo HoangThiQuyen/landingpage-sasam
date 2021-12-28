@@ -26,8 +26,8 @@ export default function InfoProduct() {
           href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
         />
       </Head>
-      <div className="row align-items-center">
-        <div className="col-lg-6">
+      <div className="row align-items-center justify-content-center">
+        <div className="col-lg-6 order-2 my-5 my-lg-0  order-lg-1">
           <h1 className={`${styles.title} wow fadeInDown`}>
             Sarmentosa immune support
           </h1>
@@ -73,12 +73,12 @@ export default function InfoProduct() {
             </Link>
           </div>
         </div>
-        <div className="col-lg-6  mt-5 mt-lg-0">
+        <div className="col-lg-6  text-center order-1  order-lg-2">
           <div
             className={`${styles.imageProduct1} wow fadeInRight`}
             data-wow-duration="1.4s"
           >
-            <Image src={product1} alt="product1" className={`  img-fluid`} />
+            <Image src={product1} alt="product1" className={`img-fluid`} />
           </div>
         </div>
       </div>

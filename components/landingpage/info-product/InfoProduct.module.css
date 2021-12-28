@@ -4,12 +4,10 @@
   font-family: "Nunito";
   margin-top: 150px;
 }
-.imageProduct1 {
-  border-radius: 30px;
-  border: 2px solid #0297d0 !important;
-}
+
 .imageProduct1 img{
   border-radius: 30px;
+  border: 2px solid #0297d0 !important;
 }
 
 .iconLogo {

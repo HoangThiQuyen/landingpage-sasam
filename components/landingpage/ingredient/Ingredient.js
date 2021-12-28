@@ -38,7 +38,7 @@ export default function Ingredient() {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className={`${styles.ingredient}`}>
+    <div className={`${styles.ingredient} px-5 px-lg-0`}>
       <Image src={ingredientLine} alt="ingredientLine" />
       <div className={styles.leafIcon}>
         <Image
@@ -56,9 +56,16 @@ export default function Ingredient() {
             <div
               className={` ${styles.ingredientItem} d-flex justify-content-end align-items-center`}
             >
-              <div className="d-block d-lg-none"></div>
+              <div className="d-block d-lg-none">
+                <Image
+                  src={ingreLeft1}
+                  alt="ingreLeft1"
+                  width="70"
+                  height="70"
+                />
+              </div>
 
-              <h4 className="text-right">
+              <h4 className="text-lg-right text-start">
                 Cát cánh <p>( Platycodon grandiflorum )</p>
               </h4>
             </div>
@@ -67,13 +74,13 @@ export default function Ingredient() {
             >
               <div className="d-block d-lg-none">
                 <Image
-                  src={ingreLeft1}
-                  alt="ingreLeft1"
+                  src={ingreLeft2}
+                  alt="ingreLeft2"
                   width="70"
                   height="70"
                 />
               </div>
-              <h4 className="text-right">
+              <h4 className="text-lg-right text-start">
                 Bán hạ <p>( Typhonium divaricatum Decne )</p>
               </h4>
             </div>
@@ -82,13 +89,13 @@ export default function Ingredient() {
             >
               <div className="d-block d-lg-none">
                 <Image
-                  src={ingreLeft1}
-                  alt="ingreLeft1"
+                  src={ingreLeft3}
+                  alt="ingreLeft3"
                   width="70"
                   height="70"
                 />
               </div>
-              <h4 className="text-right">
+              <h4 className="text-lg-right text-start">
                 Tỳ bà diệp <p>( Eriobotrys japonica )</p>
               </h4>
             </div>
@@ -107,12 +114,7 @@ export default function Ingredient() {
                   setPhotoIndex(0);
                 }}
               >
-                <Image
-                  src={ingreLeft1}
-                  alt="ingreLeft1"
-                  width="150"
-                  height="150"
-                />
+                <Image src={ingreLeft1} alt="ingreLeft1" />
               </div>
               <div
                 className={styles.ingreLeft2}
@@ -121,12 +123,7 @@ export default function Ingredient() {
                   setPhotoIndex(1);
                 }}
               >
-                <Image
-                  src={ingreLeft2}
-                  alt="ingreLeft2"
-                  width="150"
-                  height="150"
-                />
+                <Image src={ingreLeft2} alt="ingreLeft2" />
               </div>
               <div
                 className={styles.ingreLeft3}
@@ -135,12 +132,7 @@ export default function Ingredient() {
                   setPhotoIndex(2);
                 }}
               >
-                <Image
-                  src={ingreLeft3}
-                  alt="ingreLeft3"
-                  width="150"
-                  height="150"
-                />
+                <Image src={ingreLeft3} alt="ingreLeft3" />
               </div>
               <div
                 className={styles.ingreRight1}
@@ -149,12 +141,7 @@ export default function Ingredient() {
                   setPhotoIndex(3);
                 }}
               >
-                <Image
-                  src={ingreRight1}
-                  alt="ingreRight1"
-                  width="150"
-                  height="150"
-                />
+                <Image src={ingreRight1} alt="ingreRight1" />
               </div>
               <div
                 className={styles.ingreRight2}
@@ -163,12 +150,7 @@ export default function Ingredient() {
                   setPhotoIndex(4);
                 }}
               >
-                <Image
-                  src={ingreRight2}
-                  alt="ingreRight2"
-                  width="150"
-                  height="150"
-                />
+                <Image src={ingreRight2} alt="ingreRight2" />
               </div>
               <div
                 className={styles.ingreRight3}
@@ -177,15 +159,10 @@ export default function Ingredient() {
                   setPhotoIndex(5);
                 }}
               >
-                <Image
-                  src={ingreRight3}
-                  alt="ingreRight3"
-                  width="150"
-                  height="150"
-                />
+                <Image src={ingreRight3} alt="ingreRight3" />
               </div>
               <div className={styles.product}>
-                <Image src={product} alt="product" width="100" height="200" />
+                <Image src={product} alt="product" />
               </div>
             </div>
 
@@ -216,8 +193,8 @@ export default function Ingredient() {
             >
               <div className="d-block d-lg-none">
                 <Image
-                  src={ingreLeft1}
-                  alt="ingreLeft1"
+                  src={ingreRight1}
+                  alt="ingreRight1"
                   width="70"
                   height="70"
                 />
@@ -231,8 +208,8 @@ export default function Ingredient() {
             >
               <div className="d-block d-lg-none">
                 <Image
-                  src={ingreLeft1}
-                  alt="ingreLeft1"
+                  src={ingreRight2}
+                  alt="ingreRight2"
                   width="70"
                   height="70"
                 />
@@ -246,8 +223,8 @@ export default function Ingredient() {
             >
               <div className="d-block d-lg-none">
                 <Image
-                  src={ingreLeft1}
-                  alt="ingreLeft1"
+                  src={ingreRight3}
+                  alt="ingreRight3"
                   width="70"
                   height="70"
                 />
