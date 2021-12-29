@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 // wow
 const isServer = typeof window === "undefined";
@@ -17,15 +18,15 @@ export default function Carousel() {
   const videoRef = useRef();
 
   // useEffect
-  useEffect(() => {
-    let clear = setTimeout(() => {
-      videoRef.current.play();
-    }, 3000);
+  // useEffect(() => {
+  //   let clear = setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 3000);
 
-    return () => {
-      clearTimeout(clear);
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(clear);
+  //   };
+  // }, []);
 
   useEffect(() => {
     new WOW.WOW().init();
@@ -35,13 +36,23 @@ export default function Carousel() {
     <div>
       <div>
         <div className={styles.bgvideo}>
-          <video ref={videoRef} autoPlay loop muted className={styles.video}>
+          {/* <video ref={videoRef} autoPlay loop muted className={styles.video}>
             <source src="polina.webm" type="video/webm" />
             <source
               src="https://res.cloudinary.com/dn4nxz7f0/video/upload/v1594348575/Pexels_Videos_1093655_pr26ax.mp4"
               type="video/mp4"
             />
-          </video>
+          </video> */}
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=eVXvzyET120&ab_channel=SaS%C3%A2mVi%E1%BB%87t"
+            muted={false}
+            playing={true}
+            controls={false}
+            loop={true}
+            volume={0}
+            playbackRate={1}
+            className={styles.video}
+          />
           <div className={styles.overlay}></div>
           <div className={styles.bgLine}>
             <Image src={bgLine} alt="Line background" />
