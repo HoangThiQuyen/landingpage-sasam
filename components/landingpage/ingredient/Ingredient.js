@@ -67,7 +67,7 @@ export default function Ingredient() {
               </div>
 
               <h4 className="text-lg-right text-start">
-                Cát cánh <p>( Platycodon grandiflorum )</p>
+                Cát cánh <p>(Platycodon grandiflorum)</p>
               </h4>
             </div>
             <div
@@ -82,7 +82,7 @@ export default function Ingredient() {
                 />
               </div>
               <h4 className="text-lg-right text-start">
-                Bán hạ <p>( Typhonium divaricatum Decne )</p>
+                Bán hạ <p>(Typhonium divaricatum Decne)</p>
               </h4>
             </div>
             <div
@@ -97,7 +97,7 @@ export default function Ingredient() {
                 />
               </div>
               <h4 className="text-lg-right text-start">
-                Tỳ bà diệp <p>( Eriobotrys japonica )</p>
+                Tỳ bà diệp <p>(Eriobotrys japonica)</p>
               </h4>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function Ingredient() {
                 />
               </div>
               <h4>
-                Sa Sâm Việt <p>( Sarmentosa )</p>
+                Sa Sâm Việt <p>(Sarmentosa)</p>
               </h4>
             </div>
             <div
@@ -216,7 +216,7 @@ export default function Ingredient() {
                 />
               </div>
               <h4>
-                Bạc hà diệp <p>( Menthg Arvensis Lin )</p>
+                Bạc hà diệp <p>(Menthg Arvensis Lin)</p>
               </h4>
             </div>
             <div
@@ -231,7 +231,7 @@ export default function Ingredient() {
                 />
               </div>
               <h4>
-                Tang bạch bi <p>( Cortex mori Albae Radicis )</p>
+                Tang bạch bi <p>(Cortex mori Albae Radicis)</p>
               </h4>
             </div>
           </div>
