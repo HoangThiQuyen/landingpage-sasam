@@ -1,6 +1,8 @@
+import { useState } from "react";
+
+// Third Library
 import { Row, Col, CustomInput } from "reactstrap";
 
-import { useState } from "react";
 const PersonalInfo = () => {
   const [showCard, setShowCard] = useState(false);
   return (

@@ -1,19 +1,20 @@
-import {Fragment} from 'react'
-import classnames from 'classnames'
-import {isObjEmpty} from 'utility/Utils'
-import {useForm} from 'react-hook-form'
-import {ArrowLeft, ArrowRight} from 'react-feather'
-import {Label, FormGroup, Row, Col, Button, Form, Input} from 'reactstrap'
+// Third Library
+import { isObjEmpty } from "utility/Utils";
+import { useForm } from "react-hook-form";
+import { ArrowLeft, ArrowRight } from "react-feather";
+import { Label, FormGroup, Row, Col, Button, Form, Input } from "reactstrap";
+import { Fragment } from "react";
+import classnames from "classnames";
 
-const Address = ({stepper, type}) => {
-  const {register, errors, handleSubmit, trigger} = useForm()
+const Address = ({ stepper, type }) => {
+  const { register, errors, handleSubmit, trigger } = useForm();
 
   const onSubmit = () => {
-    trigger()
+    trigger();
     if (isObjEmpty(errors)) {
-      stepper.next()
+      stepper.next();
     }
-  }
+  };
 
   return (
     <Fragment>
@@ -32,8 +33,10 @@ const Address = ({stepper, type}) => {
               id={`address-${type}`}
               name={`address-${type}`}
               placeholder="98  Borough bridge Road, Birmingham"
-              innerRef={register({required: true})}
-              className={classnames({'is-invalid': errors[`address-${type}`]})}
+              innerRef={register({ required: true })}
+              className={classnames({
+                "is-invalid": errors[`address-${type}`],
+              })}
             />
           </FormGroup>
           <FormGroup tag={Col} md="6">
@@ -45,8 +48,10 @@ const Address = ({stepper, type}) => {
               name={`landmark-${type}`}
               id={`landmark-${type}`}
               placeholder="Borough bridge"
-              innerRef={register({required: true})}
-              className={classnames({'is-invalid': errors[`landmark-${type}`]})}
+              innerRef={register({ required: true })}
+              className={classnames({
+                "is-invalid": errors[`landmark-${type}`],
+              })}
             />
           </FormGroup>
         </Row>
@@ -60,8 +65,10 @@ const Address = ({stepper, type}) => {
               name={`pincode-${type}`}
               id={`pincode-${type}`}
               placeholder="658921"
-              innerRef={register({required: true})}
-              className={classnames({'is-invalid': errors[`pincode-${type}`]})}
+              innerRef={register({ required: true })}
+              className={classnames({
+                "is-invalid": errors[`pincode-${type}`],
+              })}
             />
           </FormGroup>
           <FormGroup tag={Col} md="6">
@@ -73,8 +80,8 @@ const Address = ({stepper, type}) => {
               name={`city-${type}`}
               id={`city-${type}`}
               placeholder="Birmingham"
-              innerRef={register({required: true})}
-              className={classnames({'is-invalid': errors[`city-${type}`]})}
+              innerRef={register({ required: true })}
+              className={classnames({ "is-invalid": errors[`city-${type}`] })}
             />
           </FormGroup>
         </Row>
@@ -98,7 +105,7 @@ const Address = ({stepper, type}) => {
         </div>
       </Form>
     </Fragment>
-  )
-}
+  );
+};
 
-export default Address
+export default Address;

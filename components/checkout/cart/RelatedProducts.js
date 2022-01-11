@@ -1,6 +1,10 @@
 import React from "react";
+
+// Third Library
 import { Col, Row } from "reactstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Components
 import ProductItem from "./ProductItem";
 
 const RelatedProducts = () => {

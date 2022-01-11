@@ -1,12 +1,13 @@
 import React from "react";
-import { Star } from "react-feather";
-import { Badge, Card, CardBody, Progress } from "reactstrap";
 
 // ** Third Party Components
 import Rating from "react-rating";
 import Image from "next/image";
 import { useRouter } from "next/router";
-//image
+import { Star } from "react-feather";
+import { Badge, Card, CardBody, Progress } from "reactstrap";
+
+//*** */ Image
 import product1 from "../../../public/cart/product-1.jpg";
 
 const ProductItem = ({ item }) => {

@@ -1,8 +1,12 @@
 import React from "react";
 
+// *** Third Library
 import { Alert } from "reactstrap";
+
+// *** Components
 import PromotionCodeItem from "./PromotionCodeItem";
 
+// *** Images
 import free from "../../../public/cart/free.png";
 
 const PromotionCode = () => {

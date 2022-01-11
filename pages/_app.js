@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="shortcut icon" href="/logo.png" />
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

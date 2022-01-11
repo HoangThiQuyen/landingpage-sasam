@@ -1,125 +1,143 @@
 import React from "react";
-import { Chrono } from "react-chrono";
-import Image from "next/image";
-//image
+
+// Image
 import image1 from "../../../public/image/nat-1.jpg";
 import image2 from "../../../public/image/nat-2.jpg";
 import image3 from "../../../public/image/nat-3.jpg";
 
-//css
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { EffectCube, Pagination, Navigation } from "swiper";
+
+// Css
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import styles from "./Achievement.module.css";
 
+// Components
+import CarouselComponent from "../carousel-component/Carousel";
+
 export default function Achievement() {
-  const items = [
-    {
-      title: "2018",
+  SwiperCore.use([EffectCube, Pagination, Navigation]);
 
-      cardDetailedText: [
-        "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
-        "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
-        "Đạt Top 10 thương hiệu tín nhiệm 2018",
-      ],
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+  const data = [
+    {
+      id: 1,
+      images: [
+        {
           src: image1,
+          id: 1,
         },
-      },
-    },
-    {
-      title: "2019",
-
-      cardDetailedText: [
-        "Á quân dự án khởi nghiệp ứng dụng khoa học công nghiệp phát triển tài nguyên bản địa quốc gia năm 2021",
-        "Chung kết, Techfest quốc tế 2018 tại Đà Nẵng",
-      ],
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+        {
           src: image2,
+          id: 2,
         },
-      },
-    },
-    {
-      title: "2020",
-
-      cardDetailedText: [
-        "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
-        "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
-        "Đạt Top 10 thương hiệu tín nhiệm 2018",
-      ],
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+        {
           src: image3,
+          id: 3,
         },
-      },
+      ],
+      title: "Đây là tiêu đề của thành tựu nổi bần bật",
+      description:
+        "  Công ty CP Sa Sâm Việt đã có thành tựu nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre",
+      year: 2022,
     },
     {
-      title: "2021",
-
-      cardDetailedText: [
-        "Giấy xác nhận kết quả thực hiện nhiệm vụ khoa học & công nghệ không sử dụng ngân sách nhà nước",
-        "Cty CP Sa Sâm Việt đã có thành tích nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre do Chủ tịch UBND TP Bến Tre khen tặng",
-        "Đạt Top 10 thương hiệu tín nhiệm 2018",
-      ],
-      media: {
-        type: "IMAGE",
-        source: {
-          url: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-          src: image1,
+      id: 2,
+      images: [
+        {
+          src: image2,
+          id: 1,
         },
-      },
+        {
+          src: image3,
+          id: 2,
+        },
+        {
+          src: image1,
+          id: 3,
+        },
+      ],
+      title: "Đây là tiêu đề của thành tựu nổi bần bật",
+      description:
+        "  Công ty CP Sa Sâm Việt đã có thành tựu nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre",
+      year: 2021,
+    },
+    {
+      id: 3,
+      images: [
+        {
+          src: image2,
+          id: 1,
+        },
+        {
+          src: image3,
+          id: 2,
+        },
+        {
+          src: image1,
+          id: 3,
+        },
+      ],
+      title: "Đây là tiêu đề của thành tựu nổi bần bật",
+      description:
+        "  Công ty CP Sa Sâm Việt đã có thành tựu nổi bật trong phát triển doanh nghiệp và đóng góp tích cực vào sự phát triển kinh tế - xã hội của TP Bến Tre",
+      year: 2020,
     },
   ];
+
+  const params = {
+    navigation: true,
+    pagination: {
+      type: "progressbar",
+    },
+    slidesPerView: 2,
+    spaceBetween: 10,
+  };
 
   return (
     <div>
       <h2 className={styles.title}>Thành tựu nổi bật</h2>
       <div className="container-md">
-        <div className="d-none d-lg-block">
-          <Chrono
-            items={items}
-            // mode="VERTICAL"
-            activeItemIndex={1}
-            hideControls={true}
-            scrollable={true}
-          />
-        </div>
-        <div className="d-block d-lg-none">
-          <div className="row">
-            {items.map((ele, idx) => (
-              <div className="col-md-6" key={idx}>
-                <div className="card p-3 mb-4">
+        <Swiper {...params} className="mySwiper">
+          {data.map((ele) => (
+            <SwiperSlide key={ele.id}>
+              <div
+                style={{
+                  padding: 30,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  position: "relative",
+                }}
+              >
+                <div
+                  style={{ width: 550, heigh: 300 }}
+                  className="customCarousel"
+                >
+                  <CarouselComponent data={ele.images} />
+                </div>
+                <div className="mt-10">
                   <h4
-                    className="text-center mb-4 w-50 mx-auto py-1 rounded "
-                    style={{ background: "#ffdf00", color: "#0f52ba" }}
+                    className="text-center cursor-pointer"
+                    style={{ fontSize: 22, color: "#1eac52" }}
                   >
                     {ele.title}
                   </h4>
-
-                  <div className="text-center mb-4">
-                    <Image
-                      src={ele.media.source.src}
-                      alt="images"
-                      className="img-fluid"
-                    />
-                  </div>
-                  <ul>
-                    {ele.cardDetailedText.map((item, idex) => (
-                      <li key={idex} className="mb-1">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  <p
+                    className="w-75 mx-auto text-center"
+                    style={{ fontSize: 17, lineHeight: "30px" }}
+                  >
+                    {ele.description}
+                  </p>
                 </div>
+                <h1 className={styles.achievementsTitle}>{ele.year}</h1>
               </div>
-            ))}
-          </div>
-        </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

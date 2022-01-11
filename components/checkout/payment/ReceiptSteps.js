@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// Image
 import product1 from "../../../public/cart/product-1.jpg";
 
 const ReceiptSteps = () => {

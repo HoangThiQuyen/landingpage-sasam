@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-// components
+// Components
 import {
   Carousel,
   Promotion,
@@ -29,8 +29,9 @@ import phoneGif from "../public/gift/phoneGift.gif";
 import messageGif from "../public/gift/messageGif.gif";
 import cartGif from "../public/gift/cartGif.gif";
 import logo from "../public/image/logo-bgnone.png";
+import backtoTopImg from "../public/image/back-to-top.png";
 
-// css
+// Css
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -54,6 +55,10 @@ export default function Home() {
       }
     });
   }, []);
+
+  const handleBackToTop = () => {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -185,13 +190,16 @@ export default function Home() {
 
         {/* Câu chuyện khát vọng */}
         <Stories />
+
         {/*  Chứng nhận */}
         <Certification />
 
         {/* Thành tựu nổi bật */}
         <Achievement />
+
         {/* Hoạt động cộng đồng */}
         <ComunityActivity />
+
         {/* Tin tức nổi bật */}
         <News />
 
@@ -200,94 +208,104 @@ export default function Home() {
 
         {/* Footer */}
         <Footer />
+
         {showIcon && (
-          <div className={styles.hotLine}>
-            {/* <div className={styles.icon}>
+          <div>
+            <div className={styles.hotLine}>
+              {/* <div className={styles.icon}>
             <Link href="/my-cart">
               <a>
                 <Image src={cartGif} alt="cart_icon" width={100} height={100} />
               </a>
             </Link>
           </div> */}
-            <div
-              className={` ${styles.iconPhone} ${styles.icon} d-flex align-items-center `}
-            >
               <div
-                style={{
-                  fontWeight: "bold",
-                  fontSize: "20px",
-                  color: "#383b6d",
-                  border: "1px solid red",
-                  backgroundColor: "#fff",
-                  borderRadius: "10px",
-                }}
-                className={`${styles.phone} p-3`}
+                className={` ${styles.iconPhone} ${styles.icon} d-flex align-items-center `}
               >
-                0889 78 78 78
+                <div
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    color: "#383b6d",
+                    border: "1px solid red",
+                    backgroundColor: "#fff",
+                    borderRadius: "10px",
+                  }}
+                  className={`${styles.phone} p-3`}
+                >
+                  0889 78 78 78
+                </div>
+                <div
+                  style={{
+                    boxShadow:
+                      " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                    width: 60,
+                    height: 60,
+                    borderRadius: "50%",
+                    marginRight: 20,
+                  }}
+                >
+                  <Link href="tel:0889787878">
+                    <a>
+                      <Image
+                        src={phoneGif}
+                        alt="phone_icon"
+                        className="rounded-circle"
+                      />
+                    </a>
+                  </Link>
+                </div>
               </div>
-              <div
-                style={{
-                  boxShadow:
-                    " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                  width: 60,
-                  height: 60,
-                  borderRadius: "50%",
-                  marginRight: 20,
-                }}
-              >
-                <Link href="tel:0889787878">
-                  <a>
-                    <Image
-                      src={phoneGif}
-                      alt="phone_icon"
-                      className="rounded-circle"
-                    />
-                  </a>
-                </Link>
+              <div className={styles.icon}>
+                <div
+                  style={{
+                    boxShadow:
+                      " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                    width: 60,
+                    height: 60,
+                    borderRadius: "50%",
+                  }}
+                >
+                  <Link href="/my-cart">
+                    <a>
+                      <Image
+                        src={cartGif}
+                        alt="phone_icon"
+                        className="rounded-circle"
+                      />
+                    </a>
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className={styles.icon}>
-              <div
-                style={{
-                  boxShadow:
-                    " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                  width: 60,
-                  height: 60,
-                  borderRadius: "50%",
-                }}
-              >
-                <Link href="/my-cart">
-                  <a>
-                    <Image
-                      src={cartGif}
-                      alt="phone_icon"
-                      className="rounded-circle"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </div>
 
-            <div className={styles.icon}>
-              <div
-                style={{
-                  boxShadow:
-                    " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
-                  width: 60,
-                  height: 60,
-                  borderRadius: "50%",
-                  marginLeft: 20,
-                }}
-                data-toggle="modal"
-                data-target="#kt_chat_modal"
-                onClick={() => setShowChat(!showChat)}
-              >
-                <Image
-                  src={messageGif}
-                  alt="phone_icon"
-                  className="rounded-circle"
-                />
+              <div className={styles.icon}>
+                <div
+                  style={{
+                    boxShadow:
+                      " rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px",
+                    width: 60,
+                    height: 60,
+                    borderRadius: "50%",
+                    marginLeft: 20,
+                  }}
+                  data-toggle="modal"
+                  data-target="#kt_chat_modal"
+                  onClick={() => setShowChat(!showChat)}
+                >
+                  <Image
+                    src={messageGif}
+                    alt="phone_icon"
+                    className="rounded-circle"
+                  />
+                </div>
               </div>
+            </div>
+            <div
+              className={styles.backToTop}
+              onClick={handleBackToTop}
+              id="backtotop"
+            >
+              <Image src={backtoTopImg} alt="backToTop" className="img-fluid" />
             </div>
           </div>
         )}

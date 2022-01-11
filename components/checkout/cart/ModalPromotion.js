@@ -1,8 +1,12 @@
-import React from 'react'
-import {Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap'
-import PromotionCode from './PromotionCode'
+import React from "react";
 
-const ModalPromotion = ({modalPromotion, setModalPromotion}) => {
+// Third Library
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+
+// Components
+import PromotionCode from "./PromotionCode";
+
+const ModalPromotion = ({ modalPromotion, setModalPromotion }) => {
   return (
     <div>
       <Modal
@@ -11,7 +15,7 @@ const ModalPromotion = ({modalPromotion, setModalPromotion}) => {
         className="modal-dialog-centered"
       >
         <ModalHeader toggle={() => setModalPromotion(!modalPromotion)}>
-          <span style={{color: '#9799a0'}}>Mã giảm giá của tôi</span>
+          <span style={{ color: "#9799a0" }}>Mã giảm giá của tôi</span>
         </ModalHeader>
         <ModalBody>
           <PromotionCode />
@@ -22,11 +26,11 @@ const ModalPromotion = ({modalPromotion, setModalPromotion}) => {
             onClick={() => setModalPromotion(!modalPromotion)}
           >
             Chọn
-          </Button>{' '}
+          </Button>{" "}
         </ModalFooter>
       </Modal>
     </div>
-  )
-}
+  );
+};
 
-export default ModalPromotion
+export default ModalPromotion;
