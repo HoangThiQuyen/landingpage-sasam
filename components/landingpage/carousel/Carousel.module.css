@@ -16,8 +16,7 @@
   bottom: 0;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  transform: skewY(18deg);
+  background-color: rgba(0, 0, 0, 0);  transform: skewY(18deg);
   width: 102vw;
 }
 .background {
@@ -48,12 +47,20 @@
 }
 .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  right: 0;bottom:0;
   color: #fff;
   font-family: "Ephesis";
   font-size: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+.content p{
+  transform: skewY(18deg) !important;
 }
 .bgLine {
   position: absolute;
@@ -125,12 +132,7 @@
     height: 850px;
   }
   .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Ephesis";
+   
     font-size: 85px;
   }
   .logo {
@@ -162,12 +164,7 @@
     height: 850px;
   }
   .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Ephesis";
+    
     font-size: 85px;
   }
   .logo {
@@ -210,12 +207,7 @@
     overflow: hidden;
   }
   .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Ephesis";
+   
     font-size: 85px;
   }
   .logo {
@@ -229,13 +221,10 @@
 
 @media screen and (min-width: 1100px) and (max-width: 1350px) {
   .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Ephesis";
     font-size: 65px;
+  }
+  .content p{
+    transform: skewY(15deg) !important;
   }
   .bgLine {
     position: absolute;
@@ -291,7 +280,7 @@
     bottom: 0;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0);
     transform: skewY(15deg);
     width: 102vw;
   }
@@ -329,23 +318,14 @@
   .video {
     width: 100vw !important;
     height:530px !important;
-    transform: skewY(19deg);
   }
   .logo {
-    /* transform: skewY(-10deg); */
     margin-top: 30px;
     width: 130px;
     height: 130px;
   }
   .content {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Ephesis";
     font-size: 55px !important;
-    z-index: 9;
   }
   .iconHand {
     position: absolute;
@@ -360,13 +340,11 @@
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .content {
-    position: absolute;
-    color: #fff;
-    font-family: "Ephesis";
     font-size: 50px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  }
+  .content p{
+    transform: skewY(12deg) !important;
   }
   .bgLine {
     position: absolute;
@@ -422,7 +400,7 @@
     bottom: 0;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0);
     transform: skewY(12deg);
     width: 102vw;
   }
@@ -432,13 +410,11 @@
 }
 @media screen and (min-width: 650px) and (max-width: 768px) {
   .content {
-    position: absolute;
-    color: #fff;
-    font-family: "Ephesis";
     font-size: 40px;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  }
+  .content p{
+    transform: skewY(12deg) !important;
   }
   .bgLine {
     position: absolute;
@@ -495,7 +471,7 @@
     bottom: 0;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0);
     transform: skewY(12deg);
     width: 102vw;
   }
@@ -506,13 +482,10 @@
 
 @media screen and (min-width: 576px) and (max-width: 650px) {
   .content {
-    position: absolute;
-    color: #fff;
-    font-family: "Ephesis";
-    font-size: 40px;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 35px;
+  }
+  .content p{
+    transform: skewY(12deg) !important;
   }
   .bgLine {
     position: absolute;
@@ -569,7 +542,7 @@
     bottom: 0;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0);
     transform: skewY(12deg);
     width: 102vw;
   }
@@ -580,13 +553,12 @@
 
 @media screen and (min-width: 450px) and (max-width: 576px) {
   .content {
-    position: absolute;
-    color: #fff;
-    font-family: "Ephesis";
     font-size: 30px;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  }
+
+  .content p{
+    transform: skewY(12deg) !important;
   }
   .bgLine {
     position: absolute;
@@ -643,7 +615,7 @@
     bottom: 0;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0);
     transform: skewY(12deg);
     width: 102vw;
   }
@@ -653,18 +625,15 @@
 }
 @media screen and (max-width: 450px) {
   .content {
-    position: absolute;
-    color: #fff;
-    font-family: "Ephesis";
     font-size: 20px;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  }
+  .content p{
+    transform: skewY(12deg) !important;
   }
   .bgLine {
     position: absolute;
     bottom: -2.6%;
-    transform: skewY(15deg);
+    transform: skewY(12deg);
   }
   .bgLine1 {
     position: absolute;
@@ -703,11 +672,11 @@
   .video {
     width: 100vw !important;
     height:215px !important;
-    transform: skewY(15deg);
+    transform: skewY(12deg);
   }
   .bgvideo {
     position: relative;
-    transform: skewY(-15deg);
+    transform: skewY(-12deg);
     overflow: hidden;
   }
   .overlay {
@@ -716,8 +685,8 @@
     bottom: 0;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.55);
-    transform: skewY(15deg);
+    background-color: rgba(0, 0, 0, 0);
+    transform: skewY(12deg);
     width: 102vw;
   }
   .iconHand {
