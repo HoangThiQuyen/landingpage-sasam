@@ -33,5 +33,23 @@
   font-size: 70px;
   font-weight: bold;
   text-align: center;
-  font-family: "Ephesis";
+  font-family: "Nunito", sans-serif;
 }
+ .btn {
+    background-image: linear-gradient(to right, #11af2b, #85b740);
+    color: #fff;
+    padding: 10px 30px;
+    outline: none;
+    transition: all 2s;
+    cursor: pointer;
+    border: none;
+  }
+  .btn:hover {
+    color: #fff;
+    background-image: linear-gradient(to left, #11af2b, #6ba31c);
+  }
+
+  .modalPromotion{
+    font-family: "Nunito", sans-serif;
+  }
+

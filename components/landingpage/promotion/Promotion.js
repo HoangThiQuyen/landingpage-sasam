@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 //image
-import newImg from "../../../public/image/new.jpg";
+// import newImg from "../../../public/image/new.jpg";
 import promotion1 from "../../../public/image/promotion1.png";
 import promotion2 from "../../../public/image/promotion2.png";
 
@@ -108,13 +108,14 @@ export default function Promotion() {
                       {ele.title}
                     </h5>
                     <p className="card-text mb-2">{ele.content}</p>
-                    <button
-                      type="button"
-                      className="btn btn-primary"
-                      onClick={() => setShowModal(true)}
-                    >
-                      Đăng ký ngay
-                    </button>
+                    <div className="text-end">
+                      <button
+                        className={` ${styles.btn} rounded`}
+                        onClick={() => setShowModal(true)}
+                      >
+                        Đăng ký ngay
+                      </button>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

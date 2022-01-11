@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
+import ReactCountryFlag from "react-country-flag";
 
 // components
 import {
@@ -32,6 +33,13 @@ import logo from "../public/image/logo-bgnone.png";
 
 // css
 import styles from "../styles/Home.module.css";
+import { Settings } from "react-feather";
+import {
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  UncontrolledButtonDropdown,
+} from "reactstrap";
 
 export default function Home() {
   // UseState
@@ -292,6 +300,33 @@ export default function Home() {
           </div>
         )}
         <Chat setShowChat={setShowChat} showChat={showChat} />
+
+        <UncontrolledButtonDropdown
+          direction="start"
+          className={styles.setLanguage}
+        >
+          <DropdownToggle color="primary">
+            <Settings color="#fff" size="18" className={styles.iconSetting} />
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem href="#" tag="a" className="align-items-center">
+              <ReactCountryFlag
+                className="country-flag mr-2"
+                countryCode="vn"
+                svg
+              />
+              VietNam
+            </DropdownItem>
+            <DropdownItem href="#" tag="a" className="align-items-center">
+              <ReactCountryFlag
+                className="country-flag mr-2"
+                countryCode="us"
+                svg
+              />
+              English
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledButtonDropdown>
       </div>
     </div>
   );
